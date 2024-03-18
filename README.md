@@ -25,7 +25,7 @@ Welcome to launch PRs if there are good papres.
 
 <img src="./images/RL-GPT framework.png" alt="RL-GPT framework" style="zoom: 50%;" />
 
-+++
+***
 
 - **Natural Language Reinforcement Learning**
   - Paper Link: [arXiv 2402.07157](https://arxiv.org/abs/2402.07157) 
@@ -34,7 +34,7 @@ Welcome to launch PRs if there are good papres.
 
 <img src="./images/NLRL.png" style="zoom:50%;" />
 
-+++
+***
 
 - 
 
