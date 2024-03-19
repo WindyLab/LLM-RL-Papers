@@ -70,7 +70,7 @@
 
     - Framework Overview:
 
-      <img src="./images/Hi-Core.png" alt="Hi-Core" style="zoom:67%;" />
+      <img src="images/Hi_Core framework.png" alt="Hi-Core" style="zoom:67%;" />
 
       Fig 1. The illustration of the proposed framework. The middle section depicts the internal interactions (**light gray line**) and external interactions (**dark gray line**) in Hi-Core. Internally, the CRL agent is structured in two layers: the high-level policy formulation (**orange**) and the low-level policy learning (**green**). Furthermore, the policy library (**blue**) is constructed to store and retrieve policies. The three surrounding boxes illustrate their internal workflow when the agent encounters new tasks.
 
