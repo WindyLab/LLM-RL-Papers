@@ -70,7 +70,7 @@
 
     - Framework Overview:
 
-      <img src="images/Hi_Core framework.png" alt="Hi-Core" style="zoom:67%;" />
+      <img src="images/Hi_Core framework.png" alt="Hi_Core framework" style="zoom:67%;" />
 
       Fig 1. The illustration of the proposed framework. The middle section depicts the internal interactions (**light gray line**) and external interactions (**dark gray line**) in Hi-Core. Internally, the CRL agent is structured in two layers: the high-level policy formulation (**orange**) and the low-level policy learning (**green**). Furthermore, the policy library (**blue**) is constructed to store and retrieve policies. The three surrounding boxes illustrate their internal workflow when the agent encounters new tasks.
 
@@ -78,3 +78,18 @@
 
 ***
 
+- **True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning**
+
+    - Paper Link: [arXiv 2401.14151](https://arxiv.org/abs/2401.14151) , [homepage](https://github.com/WeihaoTan/TWOSOME)
+
+    - Framework Overview: 
+
+        <img src="./images/TWOSOME framework.png" style="zoom: 67%;" />
+
+        Fig 1. Overview of how TWOSOME generates a policy using joint probabilities of actions. The color areas in the token blocks indicate the probabilities of the corresponding token in the actions.
+
+    - Method Overview: 
+
+        The authors propose *True knoWledge cOmeS frOM practicE*(**TWOSOME**) online framework. It deploys LLMs as embodied agents to efficiently interact and align with environments via RL to solve decision-making tasks w.o. prepared dataset or prior knowledge of the environments. They use the loglikelihood scores of each token provided by LLMs to calculate the joint probabilities of each action and form valid behavior policies.
+
+***
