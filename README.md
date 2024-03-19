@@ -93,3 +93,29 @@
         The authors propose *True knoWledge cOmeS frOM practicE*(**TWOSOME**) online framework. It deploys LLMs as embodied agents to efficiently interact and align with environments via RL to solve decision-making tasks w.o. prepared dataset or prior knowledge of the environments. They use the loglikelihood scores of each token provided by LLMs to calculate the joint probabilities of each action and form valid behavior policies.
 
 ***
+
+## Open source RL environment 
+
+- Skillhack: https://github.com/ucl-dark/skillhack
+
+    <img src="./images/skillshack.png" style="zoom: 33%;" />
+
+- Minigrid: https://github.com/Farama-Foundation/MiniGrid?tab=readme-ov-file
+
+    <img src="./images/door-key-curriculum.gif" style="zoom: 50%;" />
+
+- Crafter: https://github.com/danijar/crafter?tab=readme-ov-file
+
+    ![](./images/crafter.gif)
+
+- Multi Agent RL Environment: https://github.com/Bigpig4396/Multi-Agent-Reinforcement-Learning-Environment
+
+    <img src="./images/MultiAgentRLenvDrones.gif" style="zoom:80%;" />
+
+- OpenAI Multi Agent Particle Env: https://github.com/openai/multiagent-particle-envs
+
+    <img src="./images/MultiAgentParticle.gif" style="zoom: 50%;" />
+
+- MAgent2: https://github.com/Farama-Foundation/MAgent2?tab=readme-ov-file
+
+    <img src="./images/MAgent.gif" style="zoom: 67%;" />
