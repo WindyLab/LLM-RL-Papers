@@ -120,6 +120,8 @@
 
     ![](./images/crafter.gif)
 
+- OpenAI procgen: https://github.com/openai/procgen
+
 - OpenAI Multi Agent Particle Env: https://github.com/openai/multiagent-particle-envs
 
     <img src="./images/MultiAgentParticle.gif" style="zoom: 50%;" />
