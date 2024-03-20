@@ -1,6 +1,6 @@
 
 
-# LLM-RL-Cross-Papers
+# LLM-RL-Cross-Study
 
 1. Monitoring recent cross-research on LLM &amp; RL on arXiv.
 2. Focusing on combining LLM & RL capabilities for control (such as game characters).
@@ -15,7 +15,7 @@
 
 ***
 
-## Paper
+## Papers
 
 - **EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents**
 
@@ -26,6 +26,8 @@
         ![](./images/EnvGen.png)
 
         Fig 1. In EnvGen framework, the authors generate multiple environments with an LLM to let the agent learn different skills effectively, with the Ncycle training cycles, each consisting of the following four steps. **Step 1:** they provide an LLM with a prompt composed of four components (*i.e*., task description, environment details, output template, and feedback from the previous cycle), and ask the LLM to fill the template and output various environment configurations that can be used to train agents on different skills. **Step 2:** they train a small RL agent in the LLM-generated environments. **Step 3:** they train the agent in the original environment to allow for better generalization and then measure the RL agent’s training progress by letting it explore the original environment. **Step 4:** they provide the LLM with the agent performance from the original environment (measured in step 3) as feedback for adapting the LLM environments in the next cycle to focus on the weaker performing skills.
+
+    ***
 
 - **RL-GPT: Integrating Reinforcement Learning and Code-as-policy**
 
@@ -102,7 +104,15 @@
 
 ***
 
-- 
+- **SPRING: Studying the Paper and Reasoning to Play Games**
+
+    - Paper Link: [arXiv 2305.15486](https://arxiv.org/abs/2305.15486), [Homepage](https://github.com/Holmeswww/SPRING)
+
+    - Framework Overview: 
+
+        ![](./images/SPRING framework.png)
+
+        ​	Overview of SPRING. The context string, shown in the middle column, is obtained by parsing the LATEX source code of Hafner (2021). The LLM-based agent then takes input from a visual game descriptor and the context string. The agent uses questions composed into a DAG for chain-of-thought reasoning, and the last node of the DAG is parsed into action.
 
 ***
 
@@ -121,6 +131,8 @@
     ![](./images/crafter.gif)
 
 - OpenAI procgen: https://github.com/openai/procgen
+
+    ![](./images/procgen.gif)
 
 - OpenAI Multi Agent Particle Env: https://github.com/openai/multiagent-particle-envs
 
