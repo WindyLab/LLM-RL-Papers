@@ -17,7 +17,15 @@
 
 ## Paper
 
+- **EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents**
 
+    - Paper Link: [arXiv 2403.12014](https://arxiv.org/abs/2403.12014) , [Homepage](https://envgen-llm.github.io/)
+
+    - Framework Overview: 
+
+        ![](./images/EnvGen.png)
+
+        Fig 1. In EnvGen framework, the authors generate multiple environments with an LLM to let the agent learn different skills effectively, with the Ncycle training cycles, each consisting of the following four steps. **Step 1:** they provide an LLM with a prompt composed of four components (*i.e*., task description, environment details, output template, and feedback from the previous cycle), and ask the LLM to fill the template and output various environment configurations that can be used to train agents on different skills. **Step 2:** they train a small RL agent in the LLM-generated environments. **Step 3:** they train the agent in the original environment to allow for better generalization and then measure the RL agent’s training progress by letting it explore the original environment. **Step 4:** they provide the LLM with the agent performance from the original environment (measured in step 3) as feedback for adapting the LLM environments in the next cycle to focus on the weaker performing skills.
 
 - **RL-GPT: Integrating Reinforcement Learning and Code-as-policy**
 
@@ -94,6 +102,10 @@
 
 ***
 
+- 
+
+***
+
 ## Open source RL environment 
 
 - Skillhack: https://github.com/ucl-dark/skillhack
@@ -108,13 +120,13 @@
 
     ![](./images/crafter.gif)
 
-- Multi Agent RL Environment: https://github.com/Bigpig4396/Multi-Agent-Reinforcement-Learning-Environment
-
-    <img src="./images/MultiAgentRLenvDrones.gif" style="zoom:80%;" />
-
 - OpenAI Multi Agent Particle Env: https://github.com/openai/multiagent-particle-envs
 
     <img src="./images/MultiAgentParticle.gif" style="zoom: 50%;" />
+
+- Multi Agent RL Environment: https://github.com/Bigpig4396/Multi-Agent-Reinforcement-Learning-Environment
+
+    <img src="./images/MultiAgentRLenvDrones.gif" style="zoom:80%;" />
 
 - MAgent2: https://github.com/Farama-Foundation/MAgent2?tab=readme-ov-file
 
