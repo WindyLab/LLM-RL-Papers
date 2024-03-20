@@ -41,18 +41,31 @@
 
     - Method Overview:  RL-GPT includes a slow agent and a fast agent.  The LLM can generate environment configurations (task, observation, reward, action space) for a subtask. By considering the agent’s behavior to solve the subtask, the LLM provides higher-level actions, enhancing RL’s sample efficiency.
 
+***
+
+- **How Can LLM Guide RL? A Value-Based Approach**
+
+    - Paper Link: [arXiv 2402.16181](https://arxiv.org/abs/2402.16181) , [Homepage](https://github.com/agentification/Language-Integrated-VI)
+
+    - Framework Overview: 
+
+        ![](./images/SLINVIT.png)
+
+     Demonstration of the SLINVIT algorithm in the ALFWorld environment when N=2 and the tree breadth of BFS is set to k=3. The task is to “clean a cloth and put it on countertop”. The hallucination that LLM faces, i.e., the towel should be taken (instead of cloth), is addressed by the inherent exploration mechanism in our RL framework.
+
 
 ***
 
 - **Natural Language Reinforcement Learning**
+  
   - Paper Link: [arXiv 2402.07157](https://arxiv.org/abs/2402.07157) 
-
+  
   - Framework Overview: 
-
+  
       <img src="./images/NLRL.png" style="zoom:50%;" />
-
+  
       Fig1. The authors present an illustrative example of grid-world MDP to show how NLRL and traditional RL differ for task objective, value function, Bellman equation, and generalized policy iteration. In this grid-world, the robot needs to reach the crown and avoid all dangers. We assume the robot policy takes optimal action at each non-terminal state, except a uniformly random policy at state b.
-
+  
   - Method Overview: NLRL is inspired by human learning processes. It redefines traditional RL concepts like task objectives, policies, value functions, and policy iteration using natural language space. 
 
 ***
