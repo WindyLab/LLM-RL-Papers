@@ -5,7 +5,7 @@
 1. Monitoring recent cross-research on LLM &amp; RL on arXiv.
 2. Focusing on combining LLM & RL capabilities for control (such as game characters).
 
-3. Feel free to open PRs if you want to share the good papers you’ve read
+3. Feel free to open PRs if you want to share the good papers you’ve read.
 
 ***
 
@@ -158,6 +158,10 @@
 ***
 
 ## Open source RL environment 
+
+- ALFworld: https://github.com/alfworld/alfworld?tab=readme-ov-file
+
+    <img src="./images/ALFworld.png" style="zoom:50%;" />
 
 - Skillhack: https://github.com/ucl-dark/skillhack
 
