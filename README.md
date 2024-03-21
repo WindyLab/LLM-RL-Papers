@@ -38,11 +38,11 @@
 
 - Framework Overview: 
 
-    ![](./images/YAYrobot framework.jpeg)
+    ![](./images/YAYrobotframework.jpeg)
 
     The authors operate in a hierarchical setup where a high-level policy generates language instructions for a low-level policy that executes the corresponding skills. During deployment, humans can intervene through corrective language commands, temporarily overriding the high-level policy and directly influencing the low-level policy for on-the-fly adaptation. These interventions are then used to finetune the high-level policy, improving its future performance.
 
-    ![](./images/YAYrobot framework2.png)
+    ![](./images/YAYrobotframework2.png)
 
     The system processes RGB images and the robot's current joint positions as inputs, outputting target joint positions for motor actions. The high-level policy uses a Vision Transformer to encode visual inputs and predicts language embeddings. The low-level policy uses ACT, a Transformer-based model to generate precise motor actions for the robot, guided by language instructions. This architecture enables the robot to interpret commands like “Pick up the bag” and translate them into targeted joint movements.
 
@@ -92,7 +92,7 @@
 
 - Framework Overview: 
 
-    ![](./images/PILFM framework.png)
+    ![](./images/PILFMframework.png)
 
 
 ***
@@ -165,7 +165,7 @@
 
 - Framework Overview: 
 
-    ![](./images/SPRING framework.png)
+    ![](./images/SPRINGframework.png)
 
     ​	Overview of SPRING. The context string, shown in the middle column, is obtained by parsing the LATEX source code of Hafner (2021). The LLM-based agent then takes input from a visual game descriptor and the context string. The agent uses questions composed into a DAG for chain-of-thought reasoning, and the last node of the DAG is parsed into action.
 
