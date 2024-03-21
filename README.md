@@ -67,6 +67,12 @@
 
      Demonstration of the SLINVIT algorithm in the ALFWorld environment when N=2 and the tree breadth of BFS is set to k=3. The task is to “clean a cloth and put it on countertop”. The hallucination that LLM faces, i.e., the towel should be taken (instead of cloth), is addressed by the inherent exploration mechanism in our RL framework.
 
+***
+
+- ### Policy Improvement using Language Feedback Models
+
+    - Paper Link : [arXiv 2402.07876](https://arxiv.org/abs/2402.07876)
+
 
 ***
 
