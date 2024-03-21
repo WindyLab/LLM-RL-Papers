@@ -11,8 +11,10 @@
 
 - [LLM-RL-Cross-Study](#llm-rl-cross-study)
   * [Papers](#papers)
+  
     + [The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models](#The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models)
-    + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot--improving-on-the-fly-from-language-corrThe RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Modelsections)
+    + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#Yell At Your Robot: Improving On-the-Fly from Language Corrections)
+  
     + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen--generating-and-adapting-environments-via-llms-for-training-embodied-agents)
     + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt--integrating-reinforcement-learning-and-code-as-policy)
     + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl--a-value-based-approach)
@@ -23,6 +25,8 @@
     + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice--aligning-llms-with-embodied-environments-via-reinforcement-learning)
     + [SPRING: Studying the Paper and Reasoning to Play Games](#spring--studying-the-paper-and-reasoning-to-play-games)
     + [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
+    + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#Do As I Can, Not As I Say: Grounding Language in Robotic Affordances)
+  
   * [Open source RL environment](#open-source-rl-environment)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -32,7 +36,7 @@
 ***
 
 ## Papers
-###  sThe RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models
+###  The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models
 - Paper Link: [arXiv 2402.01874](https://arxiv.org/abs/2402.01874) 
 
 - Overview:
@@ -195,9 +199,19 @@
 
 ***
 
+### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
+- Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691) , [Homepage](https://say-can.github.io/)
 
-- Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691)
+- Framework Overview: 
+
+    <img src="./images/saycan_framework.png" style="zoom:67%;" />
+
+     	Given a high-level instruction, SayCan combines probabilities from a LLM (the probability that a skill is useful for the instruction) with the probabilities from a value function (the probability of successfully executing said skill) to select the skill to perform. This emits a skill that is both possible and useful. The process is repeated by appending the skill to the response and querying the models again, until the output step is to terminate. 
+
+    ![](./images/saycan_valuefunction.png)
+
+    ​	A value function module (a) is queried to form a value function space of action primitives based on the current observation. Visualizing “pick” value functions, in (b) “Pick up the red bull can” and “Pick up the apple” have high values because both objects are in the scene, while in (c) the robot is navigating an empty space, and thus none of the pick up actions receive high values.
 
 ***
 
