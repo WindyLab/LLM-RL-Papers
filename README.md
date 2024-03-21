@@ -5,7 +5,7 @@
 1. Monitoring recent cross-research on LLM &amp; RL on arXiv.
 2. Focusing on combining LLM & RL capabilities for control (such as game characters).
 
-3. Welcome to launch PRs if there are good papres.
+3. Feel free to open PRs if you want to share the good papers you’ve read
 
 ***
 
@@ -16,6 +16,20 @@
 ***
 
 ## Papers
+
+- **Yell At Your Robot: Improving On-the-Fly from Language Corrections**
+
+    - Paper Link: [arXiv 2403.12910](https://arxiv.org/abs/2403.12910) , [Homepage](https://yay-robot.github.io/)
+
+    - Framework Overview: 
+
+        ![](./images/YAYrobot framework.jpeg)
+
+        The authors operate in a hierarchical setup where a high-level policy generates language instructions for a low-level policy that executes the corresponding skills. During deployment, humans can intervene through corrective language commands, temporarily overriding the high-level policy and directly influencing the low-level policy for on-the-fly adaptation. These interventions are then used to finetune the high-level policy, improving its future performance.
+
+        ![](./images/YAYrobot framework2.png)
+
+        The system processes RGB images and the robot's current joint positions as inputs, outputting target joint positions for motor actions. The high-level policy uses a Vision Transformer to encode visual inputs and predicts language embeddings. The low-level policy uses ACT, a Transformer-based model to generate precise motor actions for the robot, guided by language instructions. This architecture enables the robot to interpret commands like “Pick up the bag” and translate them into targeted joint movements.
 
 - **EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents**
 
@@ -138,6 +152,8 @@
         ![](./images/ELLM.png)
       
       ELLM uses a pretrained large language model (LLM) to suggest plausibly useful goals in a task-agnostic way. Building on LLM capabilities such as context-sensitivity and common-sense, ELLM trains RL agents to pursue goals that are likely meaningful without requiring direct human intervention.
+    
+    
 
 ***
 
