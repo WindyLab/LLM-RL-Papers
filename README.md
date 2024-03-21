@@ -129,6 +129,18 @@
 
 ***
 
+- **Guiding Pretraining in Reinforcement Learning with Large Language Models**
+
+    - Paper Link: [arXiv 2302.06692](https://arxiv.org/abs/2302.06692) , [Homepage](https://github.com/yuqingd/ellm)
+
+    - Framework Overview: 
+
+        ![](./images/ELLM.png)
+      
+      ELLM uses a pretrained large language model (LLM) to suggest plausibly useful goals in a task-agnostic way. Building on LLM capabilities such as context-sensitivity and common-sense, ELLM trains RL agents to pursue goals that are likely meaningful without requiring direct human intervention.
+
+***
+
 ## Open source RL environment 
 
 - Skillhack: https://github.com/ucl-dark/skillhack
