@@ -11,7 +11,8 @@
 
 - [LLM-RL-Cross-Study](#llm-rl-cross-study)
   * [Papers](#papers)
-    + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot--improving-on-the-fly-from-language-corrections)
+    + [The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models](#The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models)
+    + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot--improving-on-the-fly-from-language-corrThe RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Modelsections)
     + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen--generating-and-adapting-environments-via-llms-for-training-embodied-agents)
     + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt--integrating-reinforcement-learning-and-code-as-policy)
     + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl--a-value-based-approach)
@@ -31,7 +32,18 @@
 ***
 
 ## Papers
+###  sThe RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models
+- Paper Link: [arXiv 2402.01874](https://arxiv.org/abs/2402.01874) 
 
+- Overview:
+
+    <img src="./images/tree.png" style="zoom: 67%;" />
+
+    This study proposes a novel taxonomy of three main classes based on how RL and LLMs interact with each other:
+    RL4LLM: RL is used to improve the performance of LLMs on tasks related to Natural Language Processing.
+    LLM4RL: An LLM assists the training of an RL model that performs a task not inherently related to natural language.
+    RL+LLM: An LLM and an RL agent are embedded in a common planning framework without either of them contributing to training or fine-tuning of the other
+***
 ### Yell At Your Robot: Improving On-the-Fly from Language Corrections
 
 - Paper Link: [arXiv 2403.12910](https://arxiv.org/abs/2403.12910) , [Homepage](https://yay-robot.github.io/)
@@ -181,7 +193,11 @@
   
   ELLM uses a pretrained large language model (LLM) to suggest plausibly useful goals in a task-agnostic way. Building on LLM capabilities such as context-sensitivity and common-sense, ELLM trains RL agents to pursue goals that are likely meaningful without requiring direct human intervention.
 
+***
 
+
+
+- Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691)
 
 ***
 
