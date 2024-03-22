@@ -242,6 +242,18 @@
 
 ***
 
+### Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
+
+- Paper Link: [arXiv 2309.11489](https://arxiv.org/abs/2309.11489)
+
+- Framework Overview:
+
+    ![](./images/Text2Reword.png)
+
+    ​	*Expert Abstraction* provides an abstraction of the environment as a hierarchy of Pythonic classes. *User Instruction* describes the goal to be achieved in natural language. *User Feedback* allows users to summarize the failure mode or their preferences, which are used to improve the reward code.
+
+***
+
 ### Reward Design with Language Models
 
 - Paper Link: [arXiv 2303.00001](https://arxiv.org/abs/2303.00001)
