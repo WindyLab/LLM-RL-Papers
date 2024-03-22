@@ -4,49 +4,60 @@
 
 1. Monitoring recent cross-research on LLM &amp; RL on arXiv.
 2. Focusing on combining LLM & RL capabilities for control (such as game characters).
-
 3. Feel free to open PRs if you want to share the good papers you’ve read.
 
 ***
 
-- [LLM-RL-Cross-Study](#llm-rl-cross-study)
-  * [Papers](#papers)
-    + [The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-llm-taxonomy-tree--reviewing-synergies-between-reinforcement-learning-and-large-language-models)
-    + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot--improving-on-the-fly-from-language-corrections)
-    + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen--generating-and-adapting-environments-via-llms-for-training-embodied-agents)
-    + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt--integrating-reinforcement-learning-and-code-as-policy)
-    + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl--a-value-based-approach)
-    + [Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
-    + [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
-    + [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua--improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
-    + [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
-    + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice--aligning-llms-with-embodied-environments-via-reinforcement-learning)
-    + [SPRING: Studying the Paper and Reasoning to Play Games](#spring--studying-the-paper-and-reasoning-to-play-games)
-    + [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
-    + [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
-    + [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching--an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
-    + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
-    + [Reward Design with Language Models](#reward-design-with-language-models)
-    + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can--not-as-i-say--grounding-language-in-robotic-affordances)
-  * [Open source RL environment](#open-source-rl-environment)
+## Table of Content
+
+* [Research Review](#research-review)
+  + [The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rlllm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
+* [Papers [sort by time]](#papers-sort-by-time)
+  + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot-improving-on-the-fly-from-language-corrections)
+  + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
+  + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
+  + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl-a-value-based-approach)
+  + [Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
+  + [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
+  + [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
+  + [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
+  + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
+  + [SPRING: Studying the Paper and Reasoning to Play Games](#spring-studying-the-paper-and-reasoning-to-play-games)
+  + [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
+  + [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
+  + [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
+  + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
+  + [Eureka: Human-Level Reward Design via Coding Large Language Models](#eureka-human-level-reward-design-via-coding-large-language-models)
+  + [Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning](#text2reward-automated-dense-reward-function-generation-for-reinforcement-learning)
+  + [Reward Design with Language Models](#reward-design-with-language-models)
+  + [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
+  + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
+* [Open source RL environment](#open-source-rl-environment)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ***
 
-## Papers
+## Research Review
+
 ###  The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models
+
 - Paper Link: [arXiv 2402.01874](https://arxiv.org/abs/2402.01874) 
 
 - Overview:
 
     <img src="./images/tree.png" style="zoom: 67%;" />
 
-    This study proposes a novel taxonomy of three main classes based on how RL and LLMs interact with each other:
-    RL4LLM: RL is used to improve the performance of LLMs on tasks related to Natural Language Processing.
-    LLM4RL: An LLM assists the training of an RL model that performs a task not inherently related to natural language.
-    RL+LLM: An LLM and an RL agent are embedded in a common planning framework without either of them contributing to training or fine-tuning of the other
+    ​	This study proposes a novel taxonomy of three main classes based on how RL and LLMs interact with each other:
+
+    - RL4LLM: RL is used to improve the performance of LLMs on tasks related to Natural Language Processing.
+    - LLM4RL: An LLM assists the training of an RL model that performs a task not inherently related to natural language.
+    - RL+LLM: An LLM and an RL agent are embedded in a common planning framework without either of them contributing to training or fine-tuning of the other.
+
 ***
+
+## Papers [sort by time]
+
 ### Yell At Your Robot: Improving On-the-Fly from Language Corrections
 
 - Paper Link: [arXiv 2403.12910](https://arxiv.org/abs/2403.12910) , [Homepage](https://yay-robot.github.io/)
@@ -71,7 +82,7 @@
 
     ![](./images/EnvGen.png)
 
-    ​	In EnvGen framework, the authors generate multiple environments with an LLM to let the agent learn different skills effectively, with the Ncycle training cycles, each consisting of the following four steps. **Step 1:** they provide an LLM with a prompt composed of four components (*i.e*., task description, environment details, output template, and feedback from the previous cycle), and ask the LLM to fill the template and output various environment configurations that can be used to train agents on different skills. **Step 2:** they train a small RL agent in the LLM-generated environments. **Step 3:** they train the agent in the original environment to allow for better generalization and then measure the RL agent’s training progress by letting it explore the original environment. **Step 4:** they provide the LLM with the agent performance from the original environment (measured in step 3) as feedback for adapting the LLM environments in the next cycle to focus on the weaker performing skills.
+    ​	In EnvGen framework, the authors generate multiple environments with an LLM to let the agent learn different skills effectively, with the N-cycle training cycles, each consisting of the following four steps. **Step 1:** they provide an LLM with a prompt composed of four components (*i.e*., task description, environment details, output template, and feedback from the previous cycle), and ask the LLM to fill the template and output various environment configurations that can be used to train agents on different skills. **Step 2:** they train a small RL agent in the LLM-generated environments. **Step 3:** they train the agent in the original environment to allow for better generalization and then measure the RL agent’s training progress by letting it explore the original environment. **Step 4:** they provide the LLM with the agent performance from the original environment (measured in step 3) as feedback for adapting the LLM environments in the next cycle to focus on the weaker performing skills.
 
 ***
 
