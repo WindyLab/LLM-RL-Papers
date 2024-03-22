@@ -242,6 +242,16 @@
 
 ***
 
+### Eureka: Human-Level Reward Design via Coding Large Language Models
+
+- Paper Link: [arXiv 2310.12931](https://arxiv.org/abs/2310.12931) , [Homepage](https://eureka-research.github.io/)
+
+- Framework Overview: 
+
+    <img src="./images/Eureka.png" style="zoom:67%;" />
+
+***
+
 ### Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
 
 - Paper Link: [arXiv 2309.11489](https://arxiv.org/abs/2309.11489)
@@ -263,6 +273,18 @@
     <img src="./images/arXiv230300001.png" style="zoom: 50%;" />
 
     ​	Depiction of the framework on the DEAL OR NO DEAL negotiation task. A user provides an example and explanation of desired negotiating behavior (e.g., versatility) before training. During training, (1) they provide the LLM with a task description, a user’s description of their objective, an outcome of an episode that is converted to a string, and a question asking if the outcome episode satisfies the user objective. (2-3) They then parse the LLM’s response back into a string and use that as the reward signal for the Alice the RL agent. (4) Alice updates their weights and rolls out a new episode. (5) They parse the episode outcome int a string and continue training. During evaluation, they sample a trajectory from Alice and evaluate whether it is aligned with the user’s objective.
+
+***
+
+### Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks
+
+- Paper Link: [arXiv 2303.16563](https://arxiv.org/abs/2303.16563) , [Homepage](https://sites.google.com/view/plan4mc)
+
+- Framework Overview: 
+
+    ![](./images/Plan4MC.png)
+
+    ​	The authors categorize the basic skills in Minecraft into three types: Findingskills, Manipulation-skills, and Crafting-skills. We train policies to acquire skills with reinforcement learning. With the help of LLM, the authors extract relationships between skills and construct a skill graph in advance, as shown in the dashed box. During online planning, the skill search algorithm walks on the pre-generated graph, decomposes the task into an executable skill sequence, and interactively selects policies to solve complex tasks.
 
 ***
 
