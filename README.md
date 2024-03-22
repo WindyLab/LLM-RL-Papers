@@ -199,6 +199,54 @@
 
 ***
 
+### Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents
+
+- Paper Link: [arXiv 2311.13373](https://arxiv.org/abs/2311.13373)
+
+- Framework Overview: 
+
+    <img src="./images/LLM4Teach.png" style="zoom:67%;" />
+
+    An illustration of our LLM4Teach framework using the MiniGrid environment as an exemplar. The LLM-based teacher agent responds to observations of the state provided by the environment by offering soft instructions. These instructions take the form of a distribution over a set of suggested actions. The student agent is trained to optimize two objectives simultaneously. The first one is to maximize the expected return, the same as in traditional RL algorithms. The other one is to encourage the student agent to follow the guidance provided by the teacher. As the student agent’s expertise increases during the training process, the weight assigned to the second objective gradually decreases over time, reducing its reliance on the teacher.
+
+***
+
+### Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework
+
+- Paper Link: [arXiv 2311.08244](https://arxiv.org/abs/2311.08244) 
+
+- Framework Overview: 
+
+    <img src="./images/LIM2N.png" style="zoom: 50%;" />
+
+    The framework contains an LLM module, an Intelligent Sensing Module, and a Reinforcement Learning Module.
+
+***
+
+### LLM Augmented Hierarchical Agents
+
+- Paper Link: [arXiv 2311.05596](https://arxiv.org/abs/2311.05596) 
+
+- Framework Overview: 
+
+    <img src="./images/arXiv_2311_05596.png" style="zoom: 67%;" />
+
+    The LLM to guides the high-level policy and accelerates learning. It is prompted with the context, some examples, and the current task and observation. The LLM’s output biases high-level action selection.
+
+***
+
+### Reward Design with Language Models
+
+- Paper Link: [arXiv 2303.00001](https://arxiv.org/abs/2303.00001)
+
+- Framework Overview: 
+
+    <img src="./images/arXiv230300001.png" style="zoom: 50%;" />
+
+     Depiction of the framework on the DEAL OR NO DEAL negotiation task. A user provides an example and explanation of desired negotiating behavior (e.g., versatility) before training. During training, (1) they provide the LLM with a task description, a user’s description of their objective, an outcome of an episode that is converted to a string, and a question asking if the outcome episode satisfies the user objective. (2-3) They then parse the LLM’s response back into a string and use that as the reward signal for the Alice the RL agent. (4) Alice updates their weights and rolls out a new episode. (5) They parse the episode outcome int a string and continue training. During evaluation, they sample a trajectory from Alice and evaluate whether it is aligned with the user’s objective.
+
+***
+
 ### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
 - Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691) , [Homepage](https://say-can.github.io/)
