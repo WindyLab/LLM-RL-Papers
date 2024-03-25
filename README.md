@@ -317,6 +317,18 @@
 
 ## Open source RL environment 
 
+- Awesome RL environments: https://github.com/clvrai/awesome-rl-envs
+
+    This repository has a comprehensive list of categorized reinforcement learning environments.
+
+- Plan4MC: https://github.com/PKU-RL/Plan4MC/tree/main?tab=readme-ov-file
+
+    <img src="https://github.com/PKU-RL/Plan4MC/raw/main/figs/plan4mc.png" alt="img" style="zoom:33%;" />
+
+- MineRL: https://github.com/minerllabs/minerl
+
+    ![img](https://minerl.readthedocs.io/en/latest/_images/survival1.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival2.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival3.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival4.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival6.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/orion1.mp4.gif)
+
 - ALFworld: https://github.com/alfworld/alfworld?tab=readme-ov-file
 
     <img src="./images/ALFworld.png" style="zoom:50%;" />
