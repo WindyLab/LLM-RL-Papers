@@ -1,6 +1,4 @@
-
-
-# LLM-RL-Cross-Study
+# LLM RL Papers
 
 1. Monitoring recent cross-research on LLM &amp; RL on arXiv.
 2. Focusing on combining LLM & RL capabilities for control (such as game characters).
