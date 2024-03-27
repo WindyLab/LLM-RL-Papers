@@ -312,16 +312,6 @@
 
      1. Currently, humans need to provide the available skills first. In the future, the framework should have ability to lean new skills autonomously.
      2. The application of LLM in the framework is mainly to build relationships between skills. Maybe this could potentially be achieved through hard coding, such as querying a Minecraft library to generate a skill graph.
-
-- Review
-
-    ​	The highlight of the article lies in its use of LLM to generate skill graph,  thereby clarifying the sequential relationship between skills. When a task is input, the framework searches the skill graph using DFS to determine the skill to be selected at each step. RL is responsible for executing the skill and updating the state, iterating this process to break down complex tasks into manageable segments. 
-
-    ​	Areas for improvement in the framework include:
-
-     1. Currently, humans need to provide the available skills first. In the future, the framework should have ability to lean new skills autonomously.
-     2. The application of LLM in the framework is mainly to build relationships between skills. Maybe this could potentially be achieved through hard coding, such as querying a Minecraft library to generate a skill graph.
-
 ***
 
 ### Guiding Pretraining in Reinforcement Learning with Large Language Models
