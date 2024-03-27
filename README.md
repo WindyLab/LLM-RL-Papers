@@ -22,6 +22,7 @@
   + [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
   + [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
   + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
+  + [AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#AutoRT-Embodied-Foundation-Models-for-Large-Scale-Orchestration-of-Robotic-Agents)
   + [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
   + [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
   + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
