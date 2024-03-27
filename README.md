@@ -20,6 +20,7 @@
   + [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
   + [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
   + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
+  + [AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#AutoRT-Embodied-Foundation-Models-for-Large-Scale-Orchestration-of-Robotic-Agents)
   + [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
   + [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
   + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
@@ -191,6 +192,24 @@
 
 ***
 
+### AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
+
+- Paper Link: [arXiv 2401.12963](https://arxiv.org/abs/2401.12963) , [Homepage](https://auto-rt.github.io/)
+
+- Framework Overview:
+
+    <img src="./images/AutoRT_framework.png" style="zoom:40%;" />
+
+    ​	AutoRT is an exploration into scaling up robots to unstructured "in the wild" settings. The authors use VLMs to do open-vocab description of what the robot sees, then pass that description to an LLM which proposes natural language instructions. The proposals are then critiqued by another LLM using what they call a *robot constitution*, to refine instructions towards safer completable behavior. This lets them run robots in more diverse environments where they do not know the objects the robot will encounter ahead of time, collecting data on self-generated tasks.
+
+- Review: 
+
+    ​	The main contribution of this paper is the design of a framework that uses a Language Learning Model (LLM) to assign tasks to robots based on the current scene and skill. During the task execution phase, various robot learning methods, such as Reinforcement Learning (RL), can be employed. The data obtained during execution is then added to the database. 
+
+    ​	Through this iterative process, and with the addition of multiple robots, the data collection process can be automated and accelerated. This high-quality data can be used for training more robots in the future. This work lays the foundation for training robot learning based on a large amount of real physics data.
+
+***
+
 ### Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents
 
 - Paper Link: [arXiv 2311.13373](https://arxiv.org/abs/2311.13373)
@@ -319,15 +338,26 @@
 
     This repository has a comprehensive list of categorized reinforcement learning environments.
 
-- Plan4MC: https://github.com/PKU-RL/Plan4MC/tree/main?tab=readme-ov-file
+- Mine Dojo: https://github.com/MineDojo/MineDojo
 
-    <img src="https://github.com/PKU-RL/Plan4MC/raw/main/figs/plan4mc.png" alt="img" style="zoom:33%;" />
+    ​	MineDojo features a **massive simulation suite** built on Minecraft with 1000s of diverse tasks, and provides **open access to an internet-scale knowledge base** of 730K YouTube videos, 7K Wiki pages, 340K Reddit posts.
 
-- MineRL: https://github.com/minerllabs/minerl
 
-    ![img](https://minerl.readthedocs.io/en/latest/_images/survival1.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival2.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival3.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival4.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival6.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/orion1.mp4.gif)
+<div style="text-align:center;">
+    <img src="https://github.com/MineDojo/MineDojo/raw/main/images/pull.gif" alt="img" style="zoom:67%;" />
+</div> 
 
-- ALFworld: https://github.com/alfworld/alfworld?tab=readme-ov-file
+- MineRL: https://github.com/minerllabs/minerl , https://minerl.readthedocs.io/en/latest/
+
+    ​	MineRL is a rich Python 3 library which provides a [OpenAI Gym](https://gym.openai.com/) interface for interacting with the video game Minecraft, accompanied with datasets of human gameplay.
+
+<div style="text-align:center;">
+    <img src="https://minerl.readthedocs.io/en/latest/_images/survival1.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival2.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival3.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival4.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival6.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/orion1.mp4.gif" alt="img"  />
+</div>
+
+- ALFworld: https://github.com/alfworld/alfworld?tab=readme-ov-file , https://alfworld.github.io/
+
+    ​	**ALFWorld** contains interactive TextWorld environments (Côté et. al) that parallel embodied worlds in the ALFRED dataset (Shridhar et. al). The aligned environments allow agents to reason and learn high-level policies in an abstract space before solving embodied tasks through low-level actuation.
 
     <img src="./images/ALFworld.png" style="zoom:50%;" />
 
