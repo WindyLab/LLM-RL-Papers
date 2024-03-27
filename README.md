@@ -340,15 +340,26 @@
 
     This repository has a comprehensive list of categorized reinforcement learning environments.
 
-- Plan4MC: https://github.com/PKU-RL/Plan4MC/tree/main?tab=readme-ov-file
+- Mine Dojo: https://github.com/MineDojo/MineDojo
 
-    <img src="https://github.com/PKU-RL/Plan4MC/raw/main/figs/plan4mc.png" alt="img" style="zoom:33%;" />
+    ​	MineDojo features a **massive simulation suite** built on Minecraft with 1000s of diverse tasks, and provides **open access to an internet-scale knowledge base** of 730K YouTube videos, 7K Wiki pages, 340K Reddit posts.
 
-- MineRL: https://github.com/minerllabs/minerl
 
-    ![img](https://minerl.readthedocs.io/en/latest/_images/survival1.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival2.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival3.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival4.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/survival6.mp4.gif)![img](https://minerl.readthedocs.io/en/latest/_images/orion1.mp4.gif)
+<div style="text-align:center;">
+    <img src="https://github.com/MineDojo/MineDojo/raw/main/images/pull.gif" alt="img" style="zoom:67%;" />
+</div> 
 
-- ALFworld: https://github.com/alfworld/alfworld?tab=readme-ov-file
+- MineRL: https://github.com/minerllabs/minerl , https://minerl.readthedocs.io/en/latest/
+
+    ​	MineRL is a rich Python 3 library which provides a [OpenAI Gym](https://gym.openai.com/) interface for interacting with the video game Minecraft, accompanied with datasets of human gameplay.
+
+<div style="text-align:center;">
+    <img src="https://minerl.readthedocs.io/en/latest/_images/survival1.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival2.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival3.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival4.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/survival6.mp4.gif" alt="img"  /><img src="https://minerl.readthedocs.io/en/latest/_images/orion1.mp4.gif" alt="img"  />
+</div>
+
+- ALFworld: https://github.com/alfworld/alfworld?tab=readme-ov-file , https://alfworld.github.io/
+
+    ​	**ALFWorld** contains interactive TextWorld environments (Côté et. al) that parallel embodied worlds in the ALFRED dataset (Shridhar et. al). The aligned environments allow agents to reason and learn high-level policies in an abstract space before solving embodied tasks through low-level actuation.
 
     <img src="./images/ALFworld.png" style="zoom:50%;" />
 
