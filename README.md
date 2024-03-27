@@ -193,6 +193,18 @@
 
 ***
 
+### AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
+
+- Paper Link: [arXiv 2401.12963](https://arxiv.org/abs/2401.12963) , [Homepage](https://auto-rt.github.io/)
+
+- Framework Overview:
+
+    <img src="./images/AutoRT_framework.png" style="zoom:40%;" />
+
+    ​	AutoRT is an exploration into scaling up robots to unstructured "in the wild" settings. The authors use VLMs to do open-vocab description of what the robot sees, then pass that description to an LLM which proposes natural language instructions. The proposals are then critiqued by another LLM using what they call a *robot constitution*, to refine instructions towards safer completable behavior. This lets them run robots in more diverse environments where they do not know the objects the robot will encounter ahead of time, collecting data on self-generated tasks.
+
+***
+
 ### Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents
 
 - Paper Link: [arXiv 2311.13373](https://arxiv.org/abs/2311.13373)
