@@ -360,6 +360,22 @@
 
 ***
 
+### Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning
+
+- Paper Link: [arXiv 2302.02662](https://arxiv.org/abs/2302.02662) , [Homepage](https://github.com/flowersteam/Grounding_LLMs_with_online_RL)
+
+- Framework Overview: 
+
+    ![Main schema](https://github.com/flowersteam/Grounding_LLMs_with_online_RL/raw/main/docs/images/main_schema.png)
+
+    ​    The GLAM method: the authors use an LLM as agent policy in an interactive textual RL environment (BabyAI-Text) where the LLM is trained to achieve language goals using online RL (PPO), enabling functional grounding. (a) BabyAI-Text provides a goal description for the current episode as well as a description of the agent observation and a scalar reward for the current step. (b) At each step, they gather the goal description and the observation in a prompt sent to our LLM. (c) For each possible action, they use the encoder to generate a representation of the prompt and compute the conditional probability of tokens composing the action given the prompt. Once the probability of each action is estimated, they compute a softmax function over these probabilities and sample an action according to this distribution. That is, the LLM is our agent policy. (d) They use the reward returned by the environment to finetune the LLM using PPO. For this, they estimate the value of the current observation by adding a value head on top of our LLM. Finally, they backpropagate the gradient through the LLM (and its value head).
+
+- Review: 
+
+    
+
+***
+
 ### Collaborating with language models for embodied reasoning
 
 - Paper Link: [arXiv 2302.00763](https://arxiv.org/abs/2302.00763) 
