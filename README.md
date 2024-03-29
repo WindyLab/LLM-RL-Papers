@@ -362,6 +362,22 @@
 
 ***
 
+### Collaborating with language models for embodied reasoning
+
+- Paper Link: [arXiv 2302.00763](https://arxiv.org/abs/2302.00763) 
+
+- Framework Overview: 
+
+    ![](./images/Planner_actor_reporter.png)
+
+    ​    A. Schematic of the Planner-Actor-Reporter paradigm and an example of the interaction among them. B. Observation and action space of the PycoLab environment.
+
+- Review:
+
+    The framework presented in this paper is simple yet clear, and it is one of the early works on using LLM for RL policy. In this framework, the Planner is an LLM, while the Reporter and Actor are RL components. The task requires the role to first inspect the properties of an item, and then select an item with the “good” property. The framework starts with the Planner, informing it of the task description and historical execution records. The Planner then chooses an action for the Actor. After the Actor executes the action, a result is obtained. The Reporter observes the environment and provides feedback to the Planner, and this process repeats.
+
+***
+
 ### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
 - Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691) , [Homepage](https://say-can.github.io/)
