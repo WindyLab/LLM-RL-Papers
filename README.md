@@ -374,7 +374,7 @@
 
 - Review: 
 
-    
+  ​    This article uses BabyAI-Text to convert the goal and observation in Gridworld into text descriptions, which can then be transformed into prompts input to the LLM. The LLM outputs the probability of actions, and then the action probabilities output by the LLM, the value estimation obtained through MLC, and the reward are input into PPO for training. Eventually, the Agent outputs an appropriate action. In the experiment, the authors used the GFlan-T5 model, and after 250k steps of training, they achieved a success rate of 80%, which is a significant improvement compared to other methods.
 
 ***
 
