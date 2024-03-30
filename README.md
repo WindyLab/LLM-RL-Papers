@@ -294,7 +294,19 @@
 
     ![](./images/Text2Reword.png)
 
-    ​	*Expert Abstraction* provides an abstraction of the environment as a hierarchy of Pythonic classes. *User Instruction* describes the goal to be achieved in natural language. *User Feedback* allows users to summarize the failure mode or their preferences, which are used to improve the reward code.
+    ​	Expert Abstraction provides an abstraction of the environment as a hierarchy of Pythonic classes. *User Instruction* describes the goal to be achieved in natural language. *User Feedback* allows users to summarize the failure mode or their preferences, which are used to improve the reward code.
+
+***
+
+### Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics
+
+- Paper Link: [arXiv 2309.06687](https://arxiv.org/abs/2309.06687) 
+
+- Framework Overview: 
+
+    ![](./images/arXiv_2309_06687.png)
+
+    ​    The proposed self-refine LLM framework for reward function design. It consists of three steps: initial design, evaluation, and self-refinement loop. A quadruped robot forward running task is used as an example here. 
 
 ***
 
