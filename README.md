@@ -8,38 +8,40 @@
 
 ## Table of Content
 
-* [Research Review](#research-review)
-  + [The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rlllm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
-* [Papers [sort by time]](#papers-sort-by-time)
-  + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot-improving-on-the-fly-from-language-corrections)
-  + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
-  + [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
-  + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
-  + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl-a-value-based-approach)
-  + [Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
-  + [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
-  + [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
-  + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
-  + [AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#AutoRT-Embodied-Foundation-Models-for-Large-Scale-Orchestration-of-Robotic-Agents)
-  + [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
-  + [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
-  + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
-  + [Eureka: Human-Level Reward Design via Coding Large Language Models](#eureka-human-level-reward-design-via-coding-large-language-models)
-  + [Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning](#text2reward-automated-dense-reward-function-generation-for-reinforcement-learning)
-  + [SPRING: Studying the Paper and Reasoning to Play Games](#spring-studying-the-paper-and-reasoning-to-play-games)
-  + [Reward Design with Language Models](#reward-design-with-language-models)
-  + [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
-  + [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
-  + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
-* [Open source RL environment](#open-source-rl-environment)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+- [LLM RL Papers](#llm-rl-papers)
+   * [Table of Content](#table-of-content)
+   * [Research Review](#research-review)
+      + [The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-and-llm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
+   * [Papers [sort by time]](#papers-sort-by-time)
+      + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot-improving-on-the-fly-from-language-corrections)
+      + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
+      + [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
+      + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
+      + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl-a-value-based-approach)
+      + [Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
+      + [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
+      + [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
+      + [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
+      + [AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#autort-embodied-foundation-models-for-large-scale-orchestration-of-robotic-agents)
+      + [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
+      + [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
+      + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
+      + [Eureka: Human-Level Reward Design via Coding Large Language Models](#eureka-human-level-reward-design-via-coding-large-language-models)
+      + [Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning](#text2reward-automated-dense-reward-function-generation-for-reinforcement-learning)
+      + [SPRING: Studying the Paper and Reasoning to Play Games](#spring-studying-the-paper-and-reasoning-to-play-games)
+      + [Reward Design with Language Models](#reward-design-with-language-models)
+      + [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
+      + [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
+      + [Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning](#grounding-large-language-models-in-interactive-environments-with-online-reinforcement-learning)
+      + [Collaborating with language models for embodied reasoning](#collaborating-with-language-models-for-embodied-reasoning)
+      + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
+   * [Open source RL environment ](#open-source-rl-environment)
 
 ***
 
 ## Research Review
 
-###  The RL/LLM Taxonomy Tree: Reviewing Synergies Between Reinforcement Learning and Large Language Models
+###  The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models
 
 - Paper Link: [arXiv 2402.01874](https://arxiv.org/abs/2402.01874) 
 
@@ -81,7 +83,18 @@
 
     ![](./images/EnvGen.png)
 
-    ​	In EnvGen framework, the authors generate multiple environments with an LLM to let the agent learn different skills effectively, with the N-cycle training cycles, each consisting of the following four steps. **Step 1:** they provide an LLM with a prompt composed of four components (*i.e*., task description, environment details, output template, and feedback from the previous cycle), and ask the LLM to fill the template and output various environment configurations that can be used to train agents on different skills. **Step 2:** they train a small RL agent in the LLM-generated environments. **Step 3:** they train the agent in the original environment to allow for better generalization and then measure the RL agent’s training progress by letting it explore the original environment. **Step 4:** they provide the LLM with the agent performance from the original environment (measured in step 3) as feedback for adapting the LLM environments in the next cycle to focus on the weaker performing skills.
+    ​    In EnvGen framework, the authors generate multiple environments with an LLM to let the agent learn different skills effectively, with the N-cycle training cycles, each consisting of the following four steps. 
+
+    ​    **Step 1:** provide an LLM with a prompt composed of four components (*i.e*., task description, environment details, output template, and feedback from the previous cycle), and ask the LLM to fill the template and output various environment configurations that can be used to train agents on different skills. 
+
+    ​    **Step 2:** train a small RL agent in the LLM-generated environments. 
+
+    ​    **Step 3:** train the agent in the original environment to allow for better generalization and then measure the RL agent’s training progress by letting it explore the original environment. 
+
+    ​    **Step 4:** provide the LLM with the agent performance from the original environment (measured in step 3) as feedback for adapting the LLM environments in the next cycle to focus on the weaker performing skills.
+
+- Review:
+        The highlight of this paper is that it uses LLM to design initial training environment conditions, which helps the RL agent learn the strategy of long-horizon tasks more quickly. This is a concept of decomposing long-horizon tasks into smaller tasks and then retraining, accelerating the training efficiency of RL. It also uses a feedback mechanism that allows LLM to revise the conditions based on the training effect of RL. Only four interactions with LLM are needed to significantly improve the training efficiency of RL and reduce the usage cost of LLM.
 
 ***
 
@@ -93,15 +106,15 @@
 
     <img src="./images/RLingua framework.png" alt="RLingua framework" style="zoom: 80%;" />
 
-    ​	(a) Motivation: LLMs do not need environment samples and are easy to communicate for non-experts. However, the robot controllers generated directly by LLMs may have inferior performance. In contrast, RL can be used to train robot controllers to achieve high performance. However, the cost of RL is its high sample complexity. (b) Framework: RLingua extracts the internal knowledge of LLMs about robot motion to a coded imperfect controller, which is then used to collect data by interaction with the environment. The robot control policy is trained with both the collected LLM demonstration data and the interaction data collected by the online training policy
+    ​	(a) Motivation: LLMs do not need environment samples and are easy to communicate for non-experts. However, the robot controllers generated directly by LLMs may have inferior performance. In contrast, RL can be used to train robot controllers to achieve high performance. However, the cost of RL is its high sample complexity. (b) Framework: RLingua extracts the internal knowledge of LLMs about robot motion to a coded imperfect controller, which is then used to collect data by interaction with the environment. The robot control policy is trained with both the collected LLM demonstration data and the interaction data collected by the online training policy.
 
     <img src="./images/RLingua 2.png" alt="RLingua 2" style="zoom:50%;" />
 
     ​	The framework of prompt design with human feedback. The task descriptions and coding guidelines are prompted in sequence. The human feedback is provided after observing the preliminary LLM controller execution process on the robot.
 
-- Method Overview: 
+- Review: 
 
-    ​	RLingua is the combination of LLM Controller & RL. It extracts the LLM's knowledge about robot motion to improve the sample efficiency of RL.  
+    ​    The highlight of this article is the simultaneous application of LLM and RL to generate training data for online training policy. The control code generated by LLM is also considered a policy, achieving a mathematical form of unity. The main function of this policy is to run on robot and sample data. The focus of this article is on the design of LLM, that is, two types of prompt processes, namely with human feedback and with code template, as well as how to design prompts. The design of the prompts is very detailed and worth learning from.
 
 ***
 
@@ -115,9 +128,9 @@
 
     ​	The overall framework consists of a slow agent (orange) and a fast agent (green). The slow agent decomposes the task and determines “which actions” to learn. The fast agent writes code and RL configurations for low-level execution.
 
-- Method Overview:  
+- Review: 
 
-    ​	RL-GPT includes a slow agent and a fast agent.  The LLM can generate environment configurations (task, observation, reward, action space) for a subtask. By considering the agent’s behavior to solve the subtask, the LLM provides higher-level actions, enhancing RL’s sample efficiency.
+    ​    This framework integrates “Code as Policies”, “RL training”, and “LLM planning”. It first allows the LLM to decompose tasks into actions, which are then further decomposed based on their complexity. Simple actions can be directly coded, while complex actions use a combination of code and RL. The framework also applies a Critic to continuously improve the code and planning. The highlight of this paper is the integration of LLM’s code into RL’s action space for training, and this interactive approach is worth learning from.
 
 ***
 
@@ -128,8 +141,12 @@
 - Framework Overview: 
 
     ![](./images/SLINVIT.png)
-    
+
     ​	Demonstration of the SLINVIT algorithm in the ALFWorld environment when N=2 and the tree breadth of BFS is set to k=3. The task is to “clean a cloth and put it on countertop”. The hallucination that LLM faces, i.e., the towel should be taken (instead of cloth), is addressed by the inherent exploration mechanism in our RL framework.
+
+- Review
+
+    ​    The main idea of this article is to assign the task to an LLM, explore extensively within a BFS (Breadth-First Search) framework, generate multiple policies, and propose two ways to estimate value. One approach is based on code, suitable for scenarios where achieving the goal involves fulfilling multiple preconditions. The other approach relies on Monte Carlo methods. Then select the best policy with the highest value, and combine it with RL policy to enhance data sampling and policy improvement.
 
 ***
 
@@ -154,9 +171,11 @@
 
     ​	The authors present an illustrative example of grid-world MDP to show how NLRL and traditional RL differ for task objective, value function, Bellman equation, and generalized policy iteration. In this grid-world, the robot needs to reach the crown and avoid all dangers. They assume the robot policy takes optimal action at each non-terminal state, except a uniformly random policy at state b.
 
-- Method Overview: 
+- Review: 
 
-    ​	NLRL is inspired by human learning processes. It redefines traditional RL concepts like task objectives, policies, value functions, and policy iteration using natural language space. 
+    ​    This paper employs RL as a pipeline for LLM, which is an intriguing research approach. The optimal policy within the framework aligns with the task description. The quality of each state and state-action value depends on how well they align with the task description. The state-action description comprises both the reward and the description of the next state. And the state description is a summary of the all possible state-action description. 
+
+    ​    During the policy estimation step, the state description mimics either the Monte Carlo (MC) or Temporal Difference (TD) methods commonly used in RL. MC focuses on multi-step moves, evaluating based on the final state, while TD emphasizes single-step moves, returning the description of the next state. Finally, the LLM synthesizes all results to derive the current state description. In the policy improvement step, the LLM selects the best state-action pair to make decisions regarding actions.
 
 ***
 
@@ -254,6 +273,17 @@
 
     <img src="./images/Eureka.png" style="zoom:67%;" />
 
+    ​	EUREKA takes unmodified environment source code and language task description as context to zero-shot generate executable reward functions from a coding LLM. Then, it iterates between reward sampling, GPU-accelerated reward evaluation, and reward reflection to progressively improve its reward outputs.
+
+- Review
+
+    The LLM in this article is used to design the reward function for RL. The main focus is on how to create a well-designed reward function. There are two approaches:
+
+    1. **Evolutionary Search**: Initially, a large number of reward functions are generated, and their evaluation is done using hardcoded methods.
+    2. **Reward Reflection**:  During training, intermediate reward variables are saved and fed back to LLM, allowing improvements to be made based on the original reward function.
+
+    The first approach leans more toward static analysis, while the second approach emphasizes dynamic analysis. By combining these two methods, one can select and optimize the best reward function.
+
 ***
 
 ### Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
@@ -264,7 +294,19 @@
 
     ![](./images/Text2Reword.png)
 
-    ​	*Expert Abstraction* provides an abstraction of the environment as a hierarchy of Pythonic classes. *User Instruction* describes the goal to be achieved in natural language. *User Feedback* allows users to summarize the failure mode or their preferences, which are used to improve the reward code.
+    ​	Expert Abstraction provides an abstraction of the environment as a hierarchy of Pythonic classes. *User Instruction* describes the goal to be achieved in natural language. *User Feedback* allows users to summarize the failure mode or their preferences, which are used to improve the reward code.
+
+***
+
+### Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics
+
+- Paper Link: [arXiv 2309.06687](https://arxiv.org/abs/2309.06687) 
+
+- Framework Overview: 
+
+    ![](./images/arXiv_2309_06687.png)
+
+    ​    The proposed self-refine LLM framework for reward function design. It consists of three steps: initial design, evaluation, and self-refinement loop. A quadruped robot forward running task is used as an example here. 
 
 ***
 
@@ -286,7 +328,7 @@
 
 - Framework Overview: 
 
-    <img src="./images/arXiv230300001.png" style="zoom: 50%;" />
+    <img src="images/arXiv_2303_00001.png" style="zoom: 50%;" />
 
     ​	Depiction of the framework on the DEAL OR NO DEAL negotiation task. A user provides an example and explanation of desired negotiating behavior (e.g., versatility) before training. During training, (1) they provide the LLM with a task description, a user’s description of their objective, an outcome of an episode that is converted to a string, and a question asking if the outcome episode satisfies the user objective. (2-3) They then parse the LLM’s response back into a string and use that as the reward signal for the Alice the RL agent. (4) Alice updates their weights and rolls out a new episode. (5) They parse the episode outcome int a string and continue training. During evaluation, they sample a trajectory from Alice and evaluate whether it is aligned with the user’s objective.
 
@@ -302,6 +344,14 @@
 
     ​	The authors categorize the basic skills in Minecraft into three types: Findingskills, Manipulation-skills, and Crafting-skills. We train policies to acquire skills with reinforcement learning. With the help of LLM, the authors extract relationships between skills and construct a skill graph in advance, as shown in the dashed box. During online planning, the skill search algorithm walks on the pre-generated graph, decomposes the task into an executable skill sequence, and interactively selects policies to solve complex tasks.
 
+- Review
+
+    ​	The highlight of the article lies in its use of LLM to generate skill graph,  thereby clarifying the sequential relationship between skills. When a task is input, the framework searches the skill graph using DFS to determine the skill to be selected at each step. RL is responsible for executing the skill and updating the state, iterating this process to break down complex tasks into manageable segments. 
+
+    ​	Areas for improvement in the framework include:
+
+     1. Currently, humans need to provide the available skills first. In the future, the framework should have ability to lean new skills autonomously.
+     2. The application of LLM in the framework is mainly to build relationships between skills. Maybe this could potentially be achieved through hard coding, such as querying a Minecraft library to generate a skill graph.
 ***
 
 ### Guiding Pretraining in Reinforcement Learning with Large Language Models
@@ -313,6 +363,46 @@
     ![](./images/ELLM.png)
 
     ​	ELLM uses a pretrained large language model (LLM) to suggest plausibly useful goals in a task-agnostic way. Building on LLM capabilities such as context-sensitivity and common-sense, ELLM trains RL agents to pursue goals that are likely meaningful without requiring direct human intervention.
+
+    ​	![](./images/ELLM_framework2.png)
+
+    ​    ELLM uses GPT-3 to suggest adequate exploratory goals and SentenceBERT embeddings to compute the similarity between suggested goals and demonstrated behaviors as a form of intrinsically-motivated reward.
+
+- Review: 
+
+    ​    This paper is one of the earliest to use LLM for RL planning goals. The ELLM framework provides the current environmental information and available actions to the LLM, allowing it to design multiple reasonable goals based on common sense. RL then executes one of these goals. The reward function is determined based on the similarity of the embeddings of the goals and states. Since the embeddings are also generated by a  SentenceBERT model, it can also be said that the reward is generated by the LLM.
+
+***
+
+### Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning
+
+- Paper Link: [arXiv 2302.02662](https://arxiv.org/abs/2302.02662) , [Homepage](https://github.com/flowersteam/Grounding_LLMs_with_online_RL)
+
+- Framework Overview: 
+
+    ![Main schema](https://github.com/flowersteam/Grounding_LLMs_with_online_RL/raw/main/docs/images/main_schema.png)
+
+    ​    The GLAM method: the authors use an LLM as agent policy in an interactive textual RL environment (BabyAI-Text) where the LLM is trained to achieve language goals using online RL (PPO), enabling functional grounding. (a) BabyAI-Text provides a goal description for the current episode as well as a description of the agent observation and a scalar reward for the current step. (b) At each step, they gather the goal description and the observation in a prompt sent to our LLM. (c) For each possible action, they use the encoder to generate a representation of the prompt and compute the conditional probability of tokens composing the action given the prompt. Once the probability of each action is estimated, they compute a softmax function over these probabilities and sample an action according to this distribution. That is, the LLM is our agent policy. (d) They use the reward returned by the environment to finetune the LLM using PPO. For this, they estimate the value of the current observation by adding a value head on top of our LLM. Finally, they backpropagate the gradient through the LLM (and its value head).
+
+- Review: 
+
+  ​    This article uses BabyAI-Text to convert the goal and observation in Gridworld into text descriptions, which can then be transformed into prompts input to the LLM. The LLM outputs the probability of actions, and then the action probabilities output by the LLM, the value estimation obtained through MLC, and the reward are input into PPO for training. Eventually, the Agent outputs an appropriate action. In the experiment, the authors used the GFlan-T5 model, and after 250k steps of training, they achieved a success rate of 80%, which is a significant improvement compared to other methods.
+
+***
+
+### Collaborating with language models for embodied reasoning
+
+- Paper Link: [arXiv 2302.00763](https://arxiv.org/abs/2302.00763) 
+
+- Framework Overview: 
+
+    ![](./images/Planner_actor_reporter.png)
+
+    ​    A. Schematic of the Planner-Actor-Reporter paradigm and an example of the interaction among them. B. Observation and action space of the PycoLab environment.
+
+- Review:
+
+    The framework presented in this paper is simple yet clear, and it is one of the early works on using LLM for RL policy. In this framework, the Planner is an LLM, while the Reporter and Actor are RL components. The task requires the role to first inspect the properties of an item, and then select an item with the “good” property. The framework starts with the Planner, informing it of the task description and historical execution records. The Planner then chooses an action for the Actor. After the Actor executes the action, a result is obtained. The Reporter observes the environment and provides feedback to the Planner, and this process repeats.
 
 ***
 
@@ -329,6 +419,22 @@
     ![](./images/saycan_valuefunction.png)
 
     ​	A value function module (a) is queried to form a value function space of action primitives based on the current observation. Visualizing “pick” value functions, in (b) “Pick up the red bull can” and “Pick up the apple” have high values because both objects are in the scene, while in (c) the robot is navigating an empty space, and thus none of the pick up actions receive high values.
+
+***
+
+### Using Natural Language for Reward Shaping in Reinforcement Learning
+
+- Paper Link: [arXiv 1903.02020](https://arxiv.org/abs/1903.02020) 
+
+- Framework Overview: 
+
+    ![](./images/arXiv1903_02020_LEARN.png)
+
+    The framework consists of the standard RL module containing the agent-environment loop, augmented with a LanguagE Action Reward Network (LEARN) module.
+
+- Review:
+
+    ​    This article provides a method of using natural language to provide rewards. At that time, there was no LLM, so this article used a large number of existing game videos and corresponding language descriptions as the dataset. An FNN was trained, which can output the relationship between the current trajectory and language command, and use this output as an intermediate reward. By combining it with the original sparse environment reward, the RL Agent can learn the optimal strategy faster based on both the goal and the language command.
 
 ***
 
