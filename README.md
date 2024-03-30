@@ -410,6 +410,22 @@
 
 ***
 
+### Using Natural Language for Reward Shaping in Reinforcement Learning
+
+- Paper Link: [arXiv 1903.02020](https://arxiv.org/abs/1903.02020) 
+
+- Framework Overview: 
+
+    ![](./images/arXiv1903_02020_LEARN.png)
+
+    The framework consists of the standard RL module containing the agent-environment loop, augmented with a LanguagE Action Reward Network (LEARN) module.
+
+- Review:
+
+    ​    This article provides a method of using natural language to provide rewards. At that time, there was no LLM, so this article used a large number of existing game videos and corresponding language descriptions as the dataset. An FNN was trained, which can output the relationship between the current trajectory and language command, and use this output as an intermediate reward. By combining it with the original sparse environment reward, the RL Agent can learn the optimal strategy faster based on both the goal and the language command.
+
+***
+
 ## Open source RL environment 
 
 - Awesome RL environments: https://github.com/clvrai/awesome-rl-envs
