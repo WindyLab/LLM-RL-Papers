@@ -8,18 +8,16 @@
 
 ## Table of Content
 
-- [LLM RL Papers](#llm-rl-papers)
-   * [Table of Content](#table-of-content)
    * [Research Review](#research-review)
       + [A Survey on Large Language Model-Based Game Agents](#a-survey-on-large-language-model-based-game-agents)
-      + [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods](#survey-on-large-language-model-enhanced-reinforcement-learning-concept-taxonomy-and-methods)
+      + [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods ](#survey-on-large-language-model-enhanced-reinforcement-learning-concept-taxonomy-and-methods)
       + [The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-and-llm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
    * [Papers [sort by time]](#papers-sort-by-time)
       + [Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
       + [Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
       + [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
       + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot-improving-on-the-fly-from-language-corrections)
-      + [SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning](#srlm-human-in-loop-interactive-social-robot-navigation-with-large-language-model-and-deep-reinforcement-learning)
+      + [SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning ](#srlm-human-in-loop-interactive-social-robot-navigation-with-large-language-model-and-deep-reinforcement-learning)
       + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
       + [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
       + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
@@ -61,6 +59,7 @@
       + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
       + [Keep CALM and Explore: Language Models for Action Generation in Text-based Games](#keep-calm-and-explore-language-models-for-action-generation-in-text-based-games)
       + [Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
+      + [Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
    * [Open source RL environment ](#open-source-rl-environment)
 
 ***
@@ -84,7 +83,7 @@ The conceptual architecture of LLMGAs. At each game step, the **perception** mod
 
 ***
 
-### Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods
+### Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods 
 
 - Paper Link: [arXiv 2403.00282](https://arxiv.org/abs/2404.00282)
 - Overview: 
@@ -123,7 +122,7 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 Overall procedure of KALM, consisting of three key modules: 
 (A) LLM grounding module that grounds LLM in the environment and aligns LLM with inputs of environmental data
 (B) Rollout generation module that prompts the LLM to generate data for novel skills
-(C) Skill Acquisition module that trains the policy with offline RL. Finally, KALM derives a policy that trained on both offline data and imaginary data.
+(C) Skill Acquisition module that trains the policy with offline RL. Finally, KALM derives a policy that trained on both offline data and imaginary data. 
 
 
 ***
@@ -135,7 +134,7 @@ Overall procedure of KALM, consisting of three key modules:
 
 ![Refer to caption](https://arxiv.org/html/2404.08570v1/extracted/5533134/figs/Architecture.jpg)
 
-A architecture diagram mapping out the various components of CRITICAL. The framework first sets up an environment configuration based on typical real-world traffic from the highD dataset. These configurations are then leveraged to generate HighwayEnv scenarios. At the end of each episode, the authors collect data including failure reports, risk metrics, and rewards, repeating this process multiple times to gather a collection of configuration files with associated scenario risk assessments. To enhance RL training, the authors analyze a distribution of configurations based on risk metrics, identifying those conducive to critical scenarios. The authors then either directly use these configurations for new scenarios or prompt an LLM to generate critical scenarios.
+A architecture diagram mapping out the various components of CRITICAL. The framework first sets up an environment configuration based on typical real-world traffic from the highD dataset. These configurations are then leveraged to generate Highway Env scenarios. At the end of each episode, the authors collect data including failure reports, risk metrics, and rewards, repeating this process multiple times to gather a collection of configuration files with associated scenario risk assessments. To enhance RL training, the authors analyze a distribution of configurations based on risk metrics, identifying those conducive to critical scenarios. The authors then either directly use these configurations for new scenarios or prompt an LLM to generate critical scenarios.
 
 ***
 
@@ -166,7 +165,7 @@ Overview of the hierarchical system for long-horizon loco-manipulation task. The
 
 ***
 
-### SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning
+### SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning 
 
 - Paper Link: [arXiv 2403.15648](https://arxiv.org/abs/2403.15648)
 - Overview:
@@ -202,7 +201,7 @@ SRLM architecture: SRLM is implemented as a human-in-loop interactive social rob
 
 ### RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models
 
-- Paper Link: [arXiv 2403.06420](https://arxiv.org/abs/2403.06420) , [homepage](https://rlingua.github.io/)
+- Paper Link: [arXiv 2403.06420](https://arxiv.org/abs/2403.06420), [homepage](https://rlingua.github.io/)
 
 - Framework Overview:
 
@@ -567,7 +566,7 @@ Right: (A) Illustrates the experience gathering process via Reflexion, enabling 
 
 <img src="./images/arXiv230801399.png" style="zoom:67%;" />
 
-Dynalang learns to use language to make predictions about future (text + image) observations and rewards, which helps it solve tasks. Here, the authors show real model predictions in the HomeGrid environment. The agent has explored various rooms while receiving video and language observations from the environment. From the past text “the bottle is in the living room”, the agent predicts at timesteps 61-65 that it will see the bottle in the final corner of the living room. From the text ‘get the bottle” describing the task, the agent predicts that it will be rewarded for picking up the bottle. The agent can also predict future text observations: given the prefix “the plates are in the” and the plates it observed on the counter at timestep 30, the model predicts the most likely next token is “kitchen.”
+Dynalang learns to use language to make predictions about future (text + image) observations and rewards, which helps it solve tasks. Here, the authors show real model predictions in the HomeGrid environment. The agent has explored various rooms while receiving video and language observations from the environment. From the past text “the bottle is in the living room”, the agent predicts at timesteps 61-65 that it will see the bottle in the final corner of the living room. From the text ‘get the bottle” describing the task, the agent predicts that it will be rewarded for picking up the bottle. The agent can also predict future text observations: given the prefix “the plates are in the” and the plates it observed on the counter at timestep 30, the model predicts the most likely next token is “kitchen.”
 
 ***
 
@@ -629,6 +628,15 @@ Dynalang learns to use language to make predictions about future (text + image) 
 
 - Paper Link: [arXiv 2302.09368](https://arxiv.org/abs/2302.09368)
 - Overview: 
+
+Natural Language-conditioned reinforcement learning (RL) enables the agents to follow human instructions. Previous approaches generally implemented language-conditioned RL by providing human instructions in natural language (NL) and training a following policy. In this outside-in approach, the policy needs to comprehend the NL and manage the task simultaneously. However, the unbounded NL examples often bring much extra complexity for solving concrete RL tasks, which can distract policy learning from completing the task. To ease the learning burden of the policy, the authors investigate an inside-out scheme for natural language-conditioned RL by developing a task language (TL) that is task-related and unique. The TL is used in RL to achieve highly efficient and effective policy training. Besides, a translator is trained to translate NL into TL. They implement this scheme as TALAR (TAsk Language with predicAte Representation) that learns multiple predicates to model object relationships as the TL. Experiments indicate that TALAR not only better comprehends NL instructions but also leads to a better instruction-following policy that improves 13.4% success rate and adapts to unseen expressions of NL instruction. The TL can also be an effective task abstraction, naturally compatible with hierarchical RL.
+
+<img src="./images/arXiv230209368.png" style="zoom:67%;" />
+
+An illustration of OIL and IOL schemes in NLC-RL. 
+Left: OIL directly exposes the NL instructions to the policy. 
+Right: IOL develops a task language, which is task-related and a unique representation of NL instructions. 
+The solid lines represent instruction following process, while the dashed lines represent TL development and translation.
 
 ***
 
