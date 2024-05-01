@@ -6,13 +6,12 @@
 
 ***
 
-## Table of Content
-
+- [LLM RL Papers](#llm-rl-papers)
    * [Research Review](#research-review)
       + [A Survey on Large Language Model-Based Game Agents](#a-survey-on-large-language-model-based-game-agents)
       + [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods ](#survey-on-large-language-model-enhanced-reinforcement-learning-concept-taxonomy-and-methods)
       + [The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-and-llm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
-   * [Papers [sort by time]](#papers-sort-by-time)
+   * [LLM & RL Papers [sort by time]](#llm-rl-papers-sort-by-time)
       + [Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
       + [Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
       + [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
@@ -45,6 +44,7 @@
       + [Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics](#self-refined-large-language-model-as-automated-reward-function-designer-for-deep-reinforcement-learning-in-robotics)
       + [RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](#rladapter-bridging-large-language-models-to-reinforcement-learning-in-open-worlds)
       + [ExpeL: LLM Agents Are Experiential Learners](#expel-llm-agents-are-experiential-learners)
+      + [Language to Rewards for Robotic Skill Synthesis](#language-to-rewards-for-robotic-skill-synthesis)
       + [Learning to Model the World with Language](#learning-to-model-the-world-with-language)
       + [SPRING: Studying the Paper and Reasoning to Play Games](#spring-studying-the-paper-and-reasoning-to-play-games)
       + [Reward Design with Language Models](#reward-design-with-language-models)
@@ -58,7 +58,10 @@
       + [Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
       + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
       + [Keep CALM and Explore: Language Models for Action Generation in Text-based Games](#keep-calm-and-explore-language-models-for-action-generation-in-text-based-games)
+   * [Foundational Approaches in Reinforcement Learning [sort by time]](#foundational-approaches-in-reinforcement-learning-sort-by-time)
       + [Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
+      + [DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback](#dqn-tamer-human-in-the-loop-reinforcement-learning-with-intractable-feedback)
+      + [Overcoming Exploration in Reinforcement Learning with Demonstrations](#overcoming-exploration-in-reinforcement-learning-with-demonstrations)
       + [Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
    * [Open source RL environment ](#open-source-rl-environment)
 
@@ -110,7 +113,7 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 
 ***
 
-## Papers [sort by time]
+## LLM & RL Papers [sort by time]
 
 ### Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts
 
@@ -559,6 +562,15 @@ Right: (A) Illustrates the experience gathering process via Reflexion, enabling 
 
 ***
 
+### Language to Rewards for Robotic Skill Synthesis
+
+- Paper Link: [arXiv 2306.08647](https://arxiv.org/abs/2306.08647), [Homepage](https://language-to-reward.github.io/)
+- Overview:
+
+![img](https://language-to-reward.github.io/img/reward_translator.png)
+
+***
+
 ### Learning to Model the World with Language
 
 - Paper Link: [arXiv2308.01399](https://arxiv.org/abs/2308.01399), [Homepage](https://dynalang.github.io/)
@@ -738,6 +750,10 @@ CALM combined with an RL agent – DRRN – for gameplay. CALM is trained on tra
 
 ***
 
+## Foundational Approaches in Reinforcement Learning [sort by time]
+
+>Understanding the foundational approaches in Reinforcement Learning, such as Curriculum Learning, RLHF and HITL, is crucial for our research. These methods represent the building blocks upon which modern RL techniques are built. By studying these early methods, we can gain a deeper understanding of the principles and mechanisms that underlie RL. This knowledge can then inform and inspire our current work on the intersection of Language Model Learning (LLM) and RL, helping us to develop more effective and innovative solutions.
+
 ### Using Natural Language for Reward Shaping in Reinforcement Learning
 
 - Paper Link: [arXiv 1903.02020](https://arxiv.org/abs/1903.02020) 
@@ -751,6 +767,26 @@ CALM combined with an RL agent – DRRN – for gameplay. CALM is trained on tra
 - Review:
 
     ​    This article provides a method of using natural language to provide rewards. At that time, there was no LLM, so this article used a large number of existing game videos and corresponding language descriptions as the dataset. An FNN was trained, which can output the relationship between the current trajectory and language command, and use this output as an intermediate reward. By combining it with the original sparse environment reward, the RL Agent can learn the optimal strategy faster based on both the goal and the language command.
+
+***
+
+### DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback
+
+- Paper Link: [arXiv 1810.11748](https://arxiv.org/abs/1810.11748)
+- Overview: 
+
+<img src="./images/arXiv181011748.png" style="zoom:80%;" />
+
+Overview of human-in-the-loop RL and the model (DQNTAMER). The agent asynchronously interacts with a human observer in the given environment. DQN-TAMER decides actions based on two models. One (Q) estimates rewards from the environment and the other (H) for feedback from the human. 
+
+***
+
+### Overcoming Exploration in Reinforcement Learning with Demonstrations
+
+- Paper Link: [arXiv 1709.10089](https://arxiv.org/abs/1709.10089), [Homepage](https://ashvin.me/demoddpg-website/)
+- Overview:
+
+Exploration in environments with sparse rewards has been a persistent problem in reinforcement learning (RL). Many tasks are natural to specify with a sparse reward, and manually shaping a reward function can result in suboptimal performance. However, finding a non-zero reward is exponentially more difficult with increasing task horizon or action dimensionality. This puts many real-world tasks out of practical reach of RL methods. In this work, we use demonstrations to overcome the exploration problem and successfully learn to perform long-horizon, multi-step robotics tasks with continuous control such as stacking blocks with a robot arm. Our method, which builds on top of Deep Deterministic Policy Gradients and Hindsight Experience Replay, provides an order of magnitude of speedup over RL on simulated robotics tasks. It is simple to implement and makes only the additional assumption that we can collect a small set of demonstrations. Furthermore, our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy.
 
 ***
 
