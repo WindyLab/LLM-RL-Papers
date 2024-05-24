@@ -1,7 +1,7 @@
 # LLM RL Papers
 
-1. Monitoring recent cross-research on LLM &amp; RL
-2. Focusing on combining LLM & RL capabilities for control (such as game characters).
+1. Monitoring recent cross-research on LLM &amp; RL;
+2. Focusing on combining their capabilities for **control** (such as game characters, robotics);
 3. Feel free to open PRs if you want to share the good papers you’ve read.
 
 ***
@@ -199,6 +199,17 @@ SRLM architecture: SRLM is implemented as a human-in-loop interactive social rob
 
 - Review:
         The highlight of this paper is that it uses LLM to design initial training environment conditions, which helps the RL agent learn the strategy of long-horizon tasks more quickly. This is a concept of decomposing long-horizon tasks into smaller tasks and then retraining, accelerating the training efficiency of RL. It also uses a feedback mechanism that allows LLM to revise the conditions based on the training effect of RL. Only four interactions with LLM are needed to significantly improve the training efficiency of RL and reduce the usage cost of LLM.
+
+***
+
+### LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS
+
+- Paper Link: https://openreview.net/forum?id=xXo4JL8FvV, [Homepage](https://sites.google.com/view/continuallearning)
+- Overview:
+
+![](./images/League.png)
+
+This paper present a framework that utilizes LLMs to guide continual learning. It integrated LLMs to handle task decomposition and operator creation for TAMP, and generate dense rewards for RL skill learning, which can achieve online autonomous learning for long-horizon tasks. It also use a semantic skills library to enhance learning efficiency for new skills.
 
 ***
 
@@ -426,6 +437,17 @@ The overview of LaMo. LaMo mainly consists of two stages: (1) pre-training LMs o
 
 ***
 
+### Large Language Models as Generalizable Policies for Embodied Tasks
+
+- Paper Link: [arXiv 2310.17722](https://arxiv.org/abs/2310.17722), [Homepage](https://llm-rl.github.io/)
+- Overview:
+
+![img](https://llm-rl.github.io/static/images/intro_figure.jpg)
+
+By utilizing Reinforcement Learning together with a pre-trained LLM and maximizing only sparse rewards, it can learn a policy that generalizes to novel language rearrangement tasks. The method robustly generalizes over unseen objects and scenes, novel ways of referring to objects, either by description or explanation of an activity; and even novel descriptions of tasks, including variable number of rearrangements, spatial descriptions, and conditional statements.
+
+***
+
 ### Eureka: Human-Level Reward Design via Coding Large Language Models
 
 - Paper Link: [arXiv 2310.12931](https://arxiv.org/abs/2310.12931) , [Homepage](https://eureka-research.github.io/)
@@ -569,6 +591,8 @@ Right: (A) Illustrates the experience gathering process via Reflexion, enabling 
 
 ![img](https://language-to-reward.github.io/img/reward_translator.png)
 
+Detailed dataflow of the Reward Translator. A Motion Descriptor LLM takes the user input and describe the user-specified motion in natural language, and a Reward Coder translates the motion into the reward parameters
+
 ***
 
 ### Learning to Model the World with Language
@@ -579,6 +603,17 @@ Right: (A) Illustrates the experience gathering process via Reflexion, enabling 
 <img src="./images/arXiv230801399.png" style="zoom:67%;" />
 
 Dynalang learns to use language to make predictions about future (text + image) observations and rewards, which helps it solve tasks. Here, the authors show real model predictions in the HomeGrid environment. The agent has explored various rooms while receiving video and language observations from the environment. From the past text “the bottle is in the living room”, the agent predicts at timesteps 61-65 that it will see the bottle in the final corner of the living room. From the text ‘get the bottle” describing the task, the agent predicts that it will be rewarded for picking up the bottle. The agent can also predict future text observations: given the prefix “the plates are in the” and the plates it observed on the counter at timestep 30, the model predicts the most likely next token is “kitchen.”
+
+***
+
+### Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach
+
+- Paper Link: [arXiv 2306.03604](https://arxiv.org/abs/2306.03604), [Homepage](https://github.com/ZJLAB-AMMI/LLM4RL)
+- Overview:
+
+![llm4rl](https://github.com/ZJLAB-AMMI/LLM4RL/raw/main/img/framework.png)
+
+An overview of the Planner-Actor-Mediator paradigm and an example of the interactions. At each time step, the mediator takes the observation o_t as input and decides whether to ask the LLM planner for new instructions or not. When the asking policy decides to ask, as demonstrated with a red dashed line, the translator converts o_t into text descriptions, and the planner outputs a new plan accordingly for the actor to follow. On the other hand, when the mediator decides to not ask, as demonstrated with a green dashed line, the mediator returns to the actor directly, telling it to continue with the current plan.
 
 ***
 
@@ -723,6 +758,17 @@ An overview of  Read and Reward framework. The system receives the current frame
 
 ***
 
+### Inner Monologue: Embodied Reasoning through Planning with Language Models
+
+- Paper Link: [arXiv 2207.05608](https://arxiv.org/abs/2207.05608), [Homepage](https://innermonologue.github.io/)
+- Overview: 
+
+![](./images/arXiv220705608.png)
+
+ Inner Monologue enables grounded closed-loop feedback for robot planning with large language models by leveraging a collection of perception models (e.g., scene descriptors and success detectors) in tandem with pretrained language-conditioned robot skills. Experiments show the system can reason and replan to accomplish complex long-horizon tasks for (a) mobile manipulation and (b,c) tabletop manipulation in both simulated and real settings.
+
+***
+
 ### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
 - Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691) , [Homepage](https://say-can.github.io/)
@@ -752,7 +798,9 @@ CALM combined with an RL agent – DRRN – for gameplay. CALM is trained on tra
 
 ## Foundational Approaches in Reinforcement Learning [sort by time]
 
->Understanding the foundational approaches in Reinforcement Learning, such as Curriculum Learning, RLHF and HITL, is crucial for our research. These methods represent the building blocks upon which modern RL techniques are built. By studying these early methods, we can gain a deeper understanding of the principles and mechanisms that underlie RL. This knowledge can then inform and inspire our current work on the intersection of Language Model Learning (LLM) and RL, helping us to develop more effective and innovative solutions.
+>Understanding the foundational approaches in Reinforcement Learning, such as Curriculum Learning, RLHF and HITL, is crucial for our research. These methods represent the building blocks upon which modern RL techniques are built. By studying these early methods, we can gain a deeper understanding of the principles and mechanisms that underlie RL. This knowledge can then inform and inspire current work on the intersection of Language Model Learning (LLM) and RL, helping us to develop more effective and innovative solutions.
+
+***
 
 ### Using Natural Language for Reward Shaping in Reinforcement Learning
 
@@ -843,6 +891,10 @@ Reinforcement learning (RL) is a powerful technique to train an agent to perform
 - OpenAI procgen: https://github.com/openai/procgen
 
     ![](./images/procgen.gif)
+
+- Petting ZOO MPE: https://pettingzoo.farama.org/environments/mpe/
+
+    <img src="https://pettingzoo.farama.org/_images/mpe_simple_adversary.gif" alt="img" style="zoom: 25%;" /> <img src="https://pettingzoo.farama.org/_images/mpe_simple_crypto.gif" alt="img" style="zoom:25%;" /> <img src="https://pettingzoo.farama.org/_images/mpe_simple_push.gif" alt="img" style="zoom:25%;" />
 
 - OpenAI Multi Agent Particle Env: https://github.com/openai/multiagent-particle-envs
 
