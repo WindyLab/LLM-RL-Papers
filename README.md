@@ -69,6 +69,20 @@
 
 ## Research Review
 
+### LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions
+
+- Paper Link: [arXiv 2405.11106](https://arxiv.org/abs/2405.11106)
+- Overview: 
+
+<img src="./images/arXiv240511106.png" style="zoom: 40%;" />
+
+Potential research directions for language-conditioned Multi-Agent Reinforcement Learning (MARL). 
+(a) Personalityenabled cooperation, where different robots have different personalities defined by the commands. 
+(b) Language-enabled humanon-the-loop frameworks, where humans supervise robots and provide feedback. 
+(c) Traditional co-design of MARL and LLM, where knowledge about different aspects of LLM is distilled into smaller models that can be executed on board.
+
+***
+
 ### A Survey on Large Language Model-Based Game Agents
 
 - Paper Link: [arXiv 2404.02039](https://arxiv.org/abs/2404.02039), [Homepage](https://github.com/git-disl/awesome-LLM-game-agent-papers)
@@ -114,6 +128,21 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 ***
 
 ## LLM & RL Papers [sort by time]
+
+### Agentic Skill Discovery
+
+- Paper Link: [arXiv 2405.15019](https://arxiv.org/abs/2405.15019)
+- Overview:
+
+<img src="https://arxiv.org/html/2405.15019v1/x1.png" style="zoom: 30%;" />
+
+Agentic Skill Discovery gradually acquires contextual skills for table manipulation.
+
+<img src="https://arxiv.org/html/2405.15019v1/x2.png" style="zoom:40%;" />
+
+Contextual skill acquisition loop of ASD. Given the environment setup and the robot’s current abilities, an LLM continually *proposes* tasks for the robot to complete, and the successful completion will be collected as acquired skills, each with several neural network variants (*options*). 
+
+***
 
 ### Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts
 
