@@ -8,16 +8,20 @@
 
 - [LLM RL Papers](#llm-rl-papers)
    * [Research Review](#research-review)
+      + [LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions](#llm-based-multi-agent-reinforcement-learning-current-and-future-directions)
       + [A Survey on Large Language Model-Based Game Agents](#a-survey-on-large-language-model-based-game-agents)
       + [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods ](#survey-on-large-language-model-enhanced-reinforcement-learning-concept-taxonomy-and-methods)
       + [The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-and-llm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
    * [LLM & RL Papers [sort by time]](#llm-rl-papers-sort-by-time)
+      + [Agentic Skill Discovery](#agentic-skill-discovery)
+      + [LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models)
       + [Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
       + [Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
       + [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
       + [Yell At Your Robot: Improving On-the-Fly from Language Corrections](#yell-at-your-robot-improving-on-the-fly-from-language-corrections)
       + [SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning ](#srlm-human-in-loop-interactive-social-robot-navigation-with-large-language-model-and-deep-reinforcement-learning)
       + [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
+      + [LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models-1)
       + [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
       + [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
       + [How Can LLM Guide RL? A Value-Based Approach](#how-can-llm-guide-rl-a-value-based-approach)
@@ -34,6 +38,7 @@
       + [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
       + [Accelerating Reinforcement Learning of Robotic Manipulations via Feedback from Large Language Models](#accelerating-reinforcement-learning-of-robotic-manipulations-via-feedback-from-large-language-models)
       + [Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning](#unleashing-the-power-of-pre-trained-language-models-for-offline-reinforcement-learning)
+      + [Large Language Models as Generalizable Policies for Embodied Tasks](#large-language-models-as-generalizable-policies-for-embodied-tasks)
       + [Eureka: Human-Level Reward Design via Coding Large Language Models](#eureka-human-level-reward-design-via-coding-large-language-models)
       + [AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents](#amago-scalable-in-context-reinforcement-learning-for-adaptive-agents)
       + [LgTS: Dynamic Task Sampling using LLM-generated sub-goals for Reinforcement Learning Agents](#lgts-dynamic-task-sampling-using-llm-generated-sub-goals-for-reinforcement-learning-agents)
@@ -46,6 +51,7 @@
       + [ExpeL: LLM Agents Are Experiential Learners](#expel-llm-agents-are-experiential-learners)
       + [Language to Rewards for Robotic Skill Synthesis](#language-to-rewards-for-robotic-skill-synthesis)
       + [Learning to Model the World with Language](#learning-to-model-the-world-with-language)
+      + [Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach](#enabling-intelligent-interactions-between-an-agent-and-an-llm-a-reinforcement-learning-approach)
       + [SPRING: Studying the Paper and Reasoning to Play Games](#spring-studying-the-paper-and-reasoning-to-play-games)
       + [Reward Design with Language Models](#reward-design-with-language-models)
       + [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
@@ -56,6 +62,7 @@
       + [Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals](#read-and-reap-the-rewards-learning-to-play-atari-with-the-help-of-instruction-manuals)
       + [Collaborating with language models for embodied reasoning](#collaborating-with-language-models-for-embodied-reasoning)
       + [Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
+      + [Inner Monologue: Embodied Reasoning through Planning with Language Models](#inner-monologue-embodied-reasoning-through-planning-with-language-models)
       + [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
       + [Keep CALM and Explore: Language Models for Action Generation in Text-based Games](#keep-calm-and-explore-language-models-for-action-generation-in-text-based-games)
    * [Foundational Approaches in Reinforcement Learning [sort by time]](#foundational-approaches-in-reinforcement-learning-sort-by-time)
@@ -131,7 +138,7 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 
 ### Agentic Skill Discovery
 
-- Paper Link: [arXiv 2405.15019](https://arxiv.org/abs/2405.15019)
+- Paper Link: [arXiv 2405.15019](https://arxiv.org/abs/2405.15019)，[Homepage](https://agentic-skill-discovery.github.io/)
 - Overview:
 
 <img src="https://arxiv.org/html/2405.15019v1/x1.png" style="zoom: 30%;" />
@@ -141,6 +148,17 @@ Agentic Skill Discovery gradually acquires contextual skills for table manipulat
 <img src="https://arxiv.org/html/2405.15019v1/x2.png" style="zoom:40%;" />
 
 Contextual skill acquisition loop of ASD. Given the environment setup and the robot’s current abilities, an LLM continually *proposes* tasks for the robot to complete, and the successful completion will be collected as acquired skills, each with several neural network variants (*options*). 
+
+***
+
+### LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS
+
+- Paper Link:  https://openreview.net/forum?id=xXo4JL8FvV, [Homepage](https://sites.google.com/view/continuallearning)
+- Overview:
+
+<img src="./images/LEAGUE++.png" style="zoom: 33%;" />
+
+The authors present a framework that utilizes LLMs to guide continual learning. They integrated LLMs to handle task decomposition and operator creation for TAMP, and generate dense rewards for RL skill learning, which can achieve online autonomous learning for long-horizon tasks. They also use a semantic skills library to enhance learning efficiency for new skills.
 
 ***
 
