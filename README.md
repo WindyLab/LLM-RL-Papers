@@ -13,6 +13,9 @@
       + [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods ](#survey-on-large-language-model-enhanced-reinforcement-learning-concept-taxonomy-and-methods)
       + [The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-and-llm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
    * [LLM & RL Papers [sort by time]](#llm-rl-papers-sort-by-time)
+      + [LLM-Empowered State Representation for Reinforcement Learning](#LLM-Empowered State Representation for Reinforcement Learning)
+      + [iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement](#iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement)
+      + [Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control](#Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control)
       + [Agentic Skill Discovery](#agentic-skill-discovery)
       + [LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models)
       + [Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
@@ -135,6 +138,40 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 ***
 
 ## LLM & RL Papers [sort by time]
+
+### LLM-Empowered State Representation for Reinforcement Learning
+
+- Paper Link: [arXiv2407.15019](https://arxiv.org/abs/2407.13237), [Homepage](https://github.com/thu-rllab/LESR)
+- Overview:
+
+![framework](https://github.com/thu-rllab/LESR/raw/main/images/lesr.png)
+
+Conventional state representations in reinforcement learning often omit critical task-related details, presenting a significant challenge for value networks in establishing accurate mappings from states to task rewards. Traditional methods typically depend on extensive sample learning to enrich state representations with task-specific information, which leads to low sample efficiency and high time costs. Recently, surging knowledgeable large language models (LLMs) have provided promising substitutes for prior injection with minimal human intervention. Motivated by this, we propose LLM-Empowered State Representation (LESR), a novel approach that utilizes LLM to autonomously generate task-related state representation codes which help to enhance the continuity of network mappings and facilitate efficient training. Experimental results demonstrate LESR exhibits high sample efficiency and outperforms state-of-the-art baselines by an average of 29% in accumulated reward in Mujoco tasks and 30% in success rates in Gym-Robotics tasks.
+
+***
+
+### iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement
+
+- Paper Link: [arXiv2407.06025](https://arxiv.org/abs/2407.06025), [Homepage](https://github.com/Traffic-Alpha/iLLM-TSC)
+- Overview:
+
+<img src="https://github.com/Traffic-Alpha/iLLM-TSC/raw/main/assets/RL_LLM_Framework.png" alt="img" style="zoom:45%;" />
+
+The authors introduce a framework called iLLM-TSC that combines LLM and an RL agent for TSC. This framework initially employs an RL agent to make decisions based on environmental observations and policies learned from the environment, thereby providing preliminary actions. Subsequently, an LLM agent refines these actions by considering real-world situations and leveraging its understanding of complex environments. This approach enhances the TSC system’s adaptability to real-world conditions and improves the overall stability of the framework. Details regarding the RL agent and LLM agent components are provided in the following sections.
+
+***
+
+### Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control
+
+- Paper Link: [IEEE 2406 2024.3411015](https://ieeexplore.ieee.org/abstract/document/10551749)
+- Overview:
+
+![](./images/IEEE2024_3411015.png)
+
+LLM-Guided reinforcement learning framework. 
+This paper proposes an LLM-guided deep reinforcement learning framework for IFC, which utilizes LLM-guided deep reinforcement learning to achieve intelligent flight control under limited computational resources. LLM provides direct guidance during training based on local knowledge, which improves the quality of data generated in agent-environment interaction within DRL, expedites training, and offers timely feedback to agents, thereby partially mitigating sparse reward issues. Additionally, we present an effective reward function to comprehensively balance the aircraft coupling control to ensure stable, flexible control. Finally, simulations and experiments show that the proposed techniques have good performance, robustness, and adaptability across various flight tasks, laying a foundation for future research in the intelligent air combat decision-making domain.
+
+***
 
 ### Agentic Skill Discovery
 
@@ -560,7 +597,7 @@ The provided image depicts a comprehensive pipeline for data collection and trai
 - Paper Link: [arXiv 2310.00166](https://arxiv.org/abs/2310.00166), [Homepage](https://github.com/facebookresearch/motif)
 - Overview: 
 
-<img src="https://private-user-images.githubusercontent.com/15056362/277776224-297e16c5-fcd3-42ef-b686-b383b0ec56b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQwOTk0MDYsIm5iZiI6MTcxNDA5OTEwNiwicGF0aCI6Ii8xNTA1NjM2Mi8yNzc3NzYyMjQtMjk3ZTE2YzUtZmNkMy00MmVmLWI2ODYtYjM4M2IwZWM1NmIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDI2VDAyMzgyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI3MWNkY2M1ZDIwNTBkYmY0NzhlZmFiYWQ0NjEwYjg4OWZhMTJjNzc1MDliODYwMWVhNWZmNTFjNDA0NzdkNjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.9syUYuWUVqGK8kfYGmj4Fg-sERFItzNpgKEKWpjXfgI" alt="motif" style="zoom: 25%;" />
+<img src="./images/arxiv2310.00166.png" style="zoom:100%;" />
 
 A schematic representation of the three phases of Motif. In the first phase, dataset annotation, the authors extract preferences from an LLM over pairs of captions, and save the corresponding pairs of observations in a dataset alongside their annotations. In the second phase, reward training, the authors distill the preferences into an observation-based scalar reward function. In the third phase, RL training, the authors train an agent interactively with RL using the reward function extracted from the preferences, possibly together with a reward signal coming from the environment.
 
