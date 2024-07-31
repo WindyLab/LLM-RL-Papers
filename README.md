@@ -17,6 +17,7 @@
       + [iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement](#iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement)
       + [Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control](#Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control)
       + [Agentic Skill Discovery](#agentic-skill-discovery)
+      + [HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model](#HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model)
       + [LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models)
       + [Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
       + [Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
@@ -185,6 +186,17 @@ Agentic Skill Discovery gradually acquires contextual skills for table manipulat
 <img src="https://arxiv.org/html/2405.15019v1/x2.png" style="zoom:40%;" />
 
 Contextual skill acquisition loop of ASD. Given the environment setup and the robot’s current abilities, an LLM continually *proposes* tasks for the robot to complete, and the successful completion will be collected as acquired skills, each with several neural network variants (*options*). 
+
+***
+
+### HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model
+
+- Paper Link: [arXiv 2405.13547](https://arxiv.org/abs/2405.13547)
+- Overview:
+
+<img src="./images/arxiv_2405_13547.png" style="zoom:75%;" />
+
+LLM-based vehicle trajectory planning structure: The RL agent observes the traffic (surrounding vehicles) and provides a high-level action for a lane change. Then, the LLM agent retrieves the highD dataset by using FAISS and provides the next three trajectory points.
 
 ***
 
