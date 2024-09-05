@@ -140,6 +140,19 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 
 ## LLM & RL Papers [sort by time]
 
+### Language-Conditioned Offline RL for Multi-Robot Navigation
+
+- Paper Link: [arXiv2407.20164](https://arxiv.org/abs/2407.20164), [Homepage](https://sites.google.com/view/llm-marl)
+- Overview:
+
+<img src="https://lh5.googleusercontent.com/Ef42PvkPdUvVIQmNmBAms5IEqXRFAx4TVwu384EVaAeTUiCBF98g5WIUviNdDiip5vAY_DuSyMuZe33Ej3iHj-zj4tLEkc-cur7A8_Mu1jgVScnizVy9AbdqVMzJKH9xqg=w1280" alt="img" style="zoom:50%;" />
+
+<img src="https://lh5.googleusercontent.com/oyURqt-KBxqrUs_vmGrwd2TTs2a3JOYbUrCA5eV0DyeeefSPg0z7ByREatVP4bW2PM-4zV674b6KSkDuAd1IywTbLXBVGtu6Q0u5HSmlE2S9PwCsmpwSpeN1Os3u1WSI1w=w1280" alt="img" style="zoom:50%;" />
+
+The proposed multi-robot model architecture. Each agent receives a different natural language task and a local observation. They summarize each natural language task g~i~  into a latent representation z~i~  , using an LLM. The function *f* is a graph neural network that encodes local observations o~1~, o~2~, . . . and task embeddings z~1~, z~2~, . . . into a task-dependent state representation s~i~|z for each agent *i*. They learn a local policy *π* conditioned on the state-task representation. Functions *π, f* are learned entirely from a fixed dataset using offline RL. Because they compute z~i~ only once per task, the LLM is not part of the perception-action loop, allowing the policy to act quickly.
+
+***
+
 ### LLM-Empowered State Representation for Reinforcement Learning
 
 - Paper Link: [arXiv2407.15019](https://arxiv.org/abs/2407.13237), [Homepage](https://github.com/thu-rllab/LESR)
@@ -170,7 +183,7 @@ The authors introduce a framework called iLLM-TSC that combines LLM and an RL ag
 ![](./images/IEEE2024_3411015.png)
 
 LLM-Guided reinforcement learning framework. 
-This paper proposes an LLM-guided deep reinforcement learning framework for IFC, which utilizes LLM-guided deep reinforcement learning to achieve intelligent flight control under limited computational resources. LLM provides direct guidance during training based on local knowledge, which improves the quality of data generated in agent-environment interaction within DRL, expedites training, and offers timely feedback to agents, thereby partially mitigating sparse reward issues. Additionally, we present an effective reward function to comprehensively balance the aircraft coupling control to ensure stable, flexible control. Finally, simulations and experiments show that the proposed techniques have good performance, robustness, and adaptability across various flight tasks, laying a foundation for future research in the intelligent air combat decision-making domain.
+This paper proposes an LLM-guided deep reinforcement learning framework for IFC, which utilizes LLM-guided deep reinforcement learning to achieve intelligent flight control under limited computational resources. LLM provides direct guidance during training based on local knowledge, which improves the quality of data generated in agent-environment interaction within DRL, expedites training, and offers timely feedback to agents, thereby partially mitigating sparse reward issues. Additionally, they present an effective reward function to comprehensively balance the aircraft coupling control to ensure stable, flexible control. Finally, simulations and experiments show that the proposed techniques have good performance, robustness, and adaptability across various flight tasks, laying a foundation for future research in the intelligent air combat decision-making domain.
 
 ***
 
