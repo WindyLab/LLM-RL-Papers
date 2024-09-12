@@ -18,30 +18,48 @@
    - **Action**
      
      - Directly
-       1. [iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement](#iLLM-TSC-Integration-reinforcement-learning-and-large-language-model-for-traffic-signal-control-policy-improvement)
-       2. [SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning ](#srlm-human-in-loop-interactive-social-robot-navigation-with-large-language-model-and-deep-reinforcement-learning)
-       3. [Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
-       4. [Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
-       5. [True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
-       6. [Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
-       7. [LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
-       8. [Large Language Models as Generalizable Policies for Embodied Tasks](#large-language-models-as-generalizable-policies-for-embodied-tasks)
-       9. [Octopus: Embodied Vision-Language Programmer from Environmental Feedback](#octopus-embodied-vision-language-programmer-from-environmental-feedback)
-       10. [RE-MOVE: An Adaptive Policy Design for Robotic Navigation Tasks in Dynamic Environments via Language-Based Feedback](#re-move-an-adaptive-policy-design-for-robotic-navigation-tasks-in-dynamic-environments-via-language-based-feedback)
-       11. [Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning](#grounding-large-language-models-in-interactive-environments-with-online-reinforcement-learning)
-       12. [Collaborating with language models for embodied reasoning](#collaborating-with-language-models-for-embodied-reasoning)
-       13. [Inner Monologue: Embodied Reasoning through Planning with Language Models](#inner-monologue-embodied-reasoning-through-planning-with-language-models)
-       14. [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
-       15. [Keep CALM and Explore: Language Models for Action Generation in Text-based Games](#keep-calm-and-explore-language-models-for-action-generation-in-text-based-games)
+     
+       →[iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement](#iLLM-TSC-Integration-reinforcement-learning-and-large-language-model-for-traffic-signal-control-policy-improvement)
+     
+       →[SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning ](#srlm-human-in-loop-interactive-social-robot-navigation-with-large-language-model-and-deep-reinforcement-learning)
+     
+       →[Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
+     
+       →[Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
+     
+       →[True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
+     
+       →[Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
+     
+       →[LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
+     
+       →[Large Language Models as Generalizable Policies for Embodied Tasks](#large-language-models-as-generalizable-policies-for-embodied-tasks)
+     
+       →[Octopus: Embodied Vision-Language Programmer from Environmental Feedback](#octopus-embodied-vision-language-programmer-from-environmental-feedback)
+     
+       →[RE-MOVE: An Adaptive Policy Design for Robotic Navigation Tasks in Dynamic Environments via Language-Based Feedback](#re-move-an-adaptive-policy-design-for-robotic-navigation-tasks-in-dynamic-environments-via-language-based-feedback)
+     
+       →[Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning](#grounding-large-language-models-in-interactive-environments-with-online-reinforcement-learning)
+     
+       →[Collaborating with language models for embodied reasoning](#collaborating-with-language-models-for-embodied-reasoning)
+     
+       →[Inner Monologue: Embodied Reasoning through Planning with Language Models](#inner-monologue-embodied-reasoning-through-planning-with-language-models)
+     
+       →[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
+     
+       →[Keep CALM and Explore: Language Models for Action Generation in Text-based Games](#keep-calm-and-explore-language-models-for-action-generation-in-text-based-games)
+     
      - Indirectly
        1. [Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control](#Large-Language-Model-Guided-Reinforcement-Learning-Based-Six-Degree-of-Freedom-Flight-Control)
        2. [Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach](#enabling-intelligent-interactions-between-an-agent-and-an-llm-a-reinforcement-learning-approach)
        3. [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
+     
    - **Coding**
      1. [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
 
    - **Data Preference**
      1. [Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization](#reinforcement-learning-from-llm-feedback-to-counteract-goal-misgeneralization)
+     
    - **Data generation**
      1. [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
 
@@ -70,6 +88,7 @@
      10. [Language to Rewards for Robotic Skill Synthesis](#language-to-rewards-for-robotic-skill-synthesis)
      11. [Reward Design with Language Models](#reward-design-with-language-models)
      12. [Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals](#read-and-reap-the-rewards-learning-to-play-atari-with-the-help-of-instruction-manuals)
+     
    - **Skills Planning**
      1. [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
 
@@ -88,20 +107,24 @@
      7. [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
 
    - **Transformers Framework**
+     
      1. [Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning](#unleashing-the-power-of-pre-trained-language-models-for-offline-reinforcement-learning)
      2. [AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents](#amago-scalable-in-context-reinforcement-learning-for-adaptive-agents)
      3. [Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
 
 * <a href="#foundational-approaches-in-reinforcement-learning-sort-by-time" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Foundational Approaches in Reinforcement Learning [sort by time] </a>
+
 	1. [Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
-	
+
 	2. [DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback](#dqn-tamer-human-in-the-loop-reinforcement-learning-with-intractable-feedback)
-	
+
 	3. [Overcoming Exploration in Reinforcement Learning with Demonstrations](#overcoming-exploration-in-reinforcement-learning-with-demonstrations)
-	
+
 	4. [Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
-	
+
 * <a href="#open-source-rl-environment" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700">Open source RL environment </a>
+
+
 
 ***
 
