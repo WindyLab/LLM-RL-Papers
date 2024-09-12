@@ -16,115 +16,144 @@
 * <a href="#llm-rl-papers-sort-by-method" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700">LLM RL Papers [sort by method]</a>
 
    - **Action**
-     
+
      - Directly
-     
+
        →[iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement](#iLLM-TSC-Integration-reinforcement-learning-and-large-language-model-for-traffic-signal-control-policy-improvement)
-     
+
        →[SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning ](#srlm-human-in-loop-interactive-social-robot-navigation-with-large-language-model-and-deep-reinforcement-learning)
-     
+
        →[Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts](#knowledgeable-agents-by-offline-reinforcement-learning-from-large-language-model-rollouts)
-     
+
        →[Policy Improvement using Language Feedback Models](#policy-improvement-using-language-feedback-models)
-     
+
        →[True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning](#true-knowledge-comes-from-practice-aligning-llms-with-embodied-environments-via-reinforcement-learning)
-     
+
        →[Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents](#large-language-model-as-a-policy-teacher-for-training-reinforcement-learning-agents)
-     
+
        →[LLM Augmented Hierarchical Agents](#llm-augmented-hierarchical-agents)
-     
+
        →[Large Language Models as Generalizable Policies for Embodied Tasks](#large-language-models-as-generalizable-policies-for-embodied-tasks)
-     
+
        →[Octopus: Embodied Vision-Language Programmer from Environmental Feedback](#octopus-embodied-vision-language-programmer-from-environmental-feedback)
-     
+
        →[RE-MOVE: An Adaptive Policy Design for Robotic Navigation Tasks in Dynamic Environments via Language-Based Feedback](#re-move-an-adaptive-policy-design-for-robotic-navigation-tasks-in-dynamic-environments-via-language-based-feedback)
-     
+
        →[Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning](#grounding-large-language-models-in-interactive-environments-with-online-reinforcement-learning)
-     
+
        →[Collaborating with language models for embodied reasoning](#collaborating-with-language-models-for-embodied-reasoning)
-     
+
        →[Inner Monologue: Embodied Reasoning through Planning with Language Models](#inner-monologue-embodied-reasoning-through-planning-with-language-models)
-     
+
        →[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](#do-as-i-can-not-as-i-say-grounding-language-in-robotic-affordances)
-     
+
        →[Keep CALM and Explore: Language Models for Action Generation in Text-based Games](#keep-calm-and-explore-language-models-for-action-generation-in-text-based-games)
-     
+
      - Indirectly
-       1. [Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control](#Large-Language-Model-Guided-Reinforcement-Learning-Based-Six-Degree-of-Freedom-Flight-Control)
-       2. [Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach](#enabling-intelligent-interactions-between-an-agent-and-an-llm-a-reinforcement-learning-approach)
-       3. [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
-     
-   - **Coding**
-     1. [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
+       
+       →[Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control](#Large-Language-Model-Guided-Reinforcement-Learning-Based-Six-Degree-of-Freedom-Flight-Control)
+       
+       →[Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach](#enabling-intelligent-interactions-between-an-agent-and-an-llm-a-reinforcement-learning-approach)
+       
+       →[RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
 
    - **Data Preference**
-     1. [Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization](#reinforcement-learning-from-llm-feedback-to-counteract-goal-misgeneralization)
-     
+
+     →[Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization](#reinforcement-learning-from-llm-feedback-to-counteract-goal-misgeneralization)
+
    - **Data generation**
-     1. [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
+
+     →[RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
 
    - **Environment Configuration**
-     1. [Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
-     2. [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
+
+     →[Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
+
+     →[EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
 
    - **Path Point**
-     
-     1. [HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model](#HighwayLLM-Decision-Making-and-Navigation-in-Highway-Driving-with-RL-Informed-Language-Model)
-     
+
+     →[HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model](#HighwayLLM-Decision-Making-and-Navigation-in-Highway-Driving-with-RL-Informed-Language-Model)
+
    - **Prediction**
 
-     1. [Learning to Model the World with Language](#learning-to-model-the-world-with-language)
+     →[Learning to Model the World with Language](#learning-to-model-the-world-with-language)
 
    - **Reward Function**
-     1. [Agentic Skill Discovery](#agentic-skill-discovery)
-     2. [LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models)
-     3. [PREDILECT: Preferences Delineated with Zero-Shot Language-based Reasoning in Reinforcement Learning](#predilect-preferences-delineated-with-zero-shot-language-based-reasoning-in-reinforcement-learning)
-     4. [Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft](#auto-mc-reward-automated-dense-reward-design-with-large-language-models-for-minecraft)
-     5. [Accelerating Reinforcement Learning of Robotic Manipulations via Feedback from Large Language Models](#accelerating-reinforcement-learning-of-robotic-manipulations-via-feedback-from-large-language-models)
-     6. [Eureka: Human-Level Reward Design via Coding Large Language Models](#eureka-human-level-reward-design-via-coding-large-language-models)
-     7. [Motif: Intrinsic Motivation from Artificial Intelligence Feedback](#motif-intrinsic-motivation-from-artificial-intelligence-feedback)
-     8. [Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning](#text2reward-automated-dense-reward-function-generation-for-reinforcement-learning)
-     9. [Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics](#self-refined-large-language-model-as-automated-reward-function-designer-for-deep-reinforcement-learning-in-robotics)
-     10. [Language to Rewards for Robotic Skill Synthesis](#language-to-rewards-for-robotic-skill-synthesis)
-     11. [Reward Design with Language Models](#reward-design-with-language-models)
-     12. [Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals](#read-and-reap-the-rewards-learning-to-play-atari-with-the-help-of-instruction-manuals)
-     
+
+     →[Agentic Skill Discovery](#agentic-skill-discovery)
+
+     →[LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models)
+
+     →[PREDILECT: Preferences Delineated with Zero-Shot Language-based Reasoning in Reinforcement Learning](#predilect-preferences-delineated-with-zero-shot-language-based-reasoning-in-reinforcement-learning)
+
+     →[Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft](#auto-mc-reward-automated-dense-reward-design-with-large-language-models-for-minecraft)
+
+     →[Accelerating Reinforcement Learning of Robotic Manipulations via Feedback from Large Language Models](#accelerating-reinforcement-learning-of-robotic-manipulations-via-feedback-from-large-language-models)
+
+     →[Eureka: Human-Level Reward Design via Coding Large Language Models](#eureka-human-level-reward-design-via-coding-large-language-models)
+
+     →[Motif: Intrinsic Motivation from Artificial Intelligence Feedback](#motif-intrinsic-motivation-from-artificial-intelligence-feedback)
+
+     →[Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning](#text2reward-automated-dense-reward-function-generation-for-reinforcement-learning)
+
+     →[Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics](#self-refined-large-language-model-as-automated-reward-function-designer-for-deep-reinforcement-learning-in-robotics)
+
+     →[Language to Rewards for Robotic Skill Synthesis](#language-to-rewards-for-robotic-skill-synthesis)
+
+     →[Reward Design with Language Models](#reward-design-with-language-models)
+
+     →[Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals](#read-and-reap-the-rewards-learning-to-play-atari-with-the-help-of-instruction-manuals)
+
    - **Skills Planning**
-     1. [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
+
+     →[Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
+
+     →[Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
 
    - **State Representation**
-     1. [LLM-Empowered State Representation for Reinforcement Learning](#LLM-Empowered-State-Representation-for-Reinforcement-Learning)
-     2. [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
-     3. [State2Explanation: Concept-Based Explanations to Benefit Agent Learning and User Understanding](#state2explanation-concept-based-explanations-to-benefit-agent-learning-and-user-understanding)
+
+     →[LLM-Empowered State Representation for Reinforcement Learning](#LLM-Empowered-State-Representation-for-Reinforcement-Learning)
+
+     →[Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
+
+     →[State2Explanation: Concept-Based Explanations to Benefit Agent Learning and User Understanding](#state2explanation-concept-based-explanations-to-benefit-agent-learning-and-user-understanding)
 
    - **Task Suggestion**
-     1. [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
-     2. [AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#autort-embodied-foundation-models-for-large-scale-orchestration-of-robotic-agents)
-     3. [Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
-     4. [LgTS: Dynamic Task Sampling using LLM-generated sub-goals for Reinforcement Learning Agents](#lgts-dynamic-task-sampling-using-llm-generated-sub-goals-for-reinforcement-learning-agents)
-     5. [RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](#rladapter-bridging-large-language-models-to-reinforcement-learning-in-open-worlds)
-     6. [ExpeL: LLM Agents Are Experiential Learners](#expel-llm-agents-are-experiential-learners)
-     7. [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
+
+     →[Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
+
+     →[AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#autort-embodied-foundation-models-for-large-scale-orchestration-of-robotic-agents)
+
+     →[Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework](#language-and-sketching-an-llm-driven-interactive-multimodal-multitask-robot-navigation-framework)
+
+     →[LgTS: Dynamic Task Sampling using LLM-generated sub-goals for Reinforcement Learning Agents](#lgts-dynamic-task-sampling-using-llm-generated-sub-goals-for-reinforcement-learning-agents)
+
+     →[RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](#rladapter-bridging-large-language-models-to-reinforcement-learning-in-open-worlds)
+
+     →[ExpeL: LLM Agents Are Experiential Learners](#expel-llm-agents-are-experiential-learners)
+
+     →[Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
 
    - **Transformers Framework**
-     
-     1. [Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning](#unleashing-the-power-of-pre-trained-language-models-for-offline-reinforcement-learning)
-     2. [AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents](#amago-scalable-in-context-reinforcement-learning-for-adaptive-agents)
-     3. [Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
+
+     →[Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning](#unleashing-the-power-of-pre-trained-language-models-for-offline-reinforcement-learning)
+
+     →[AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents](#amago-scalable-in-context-reinforcement-learning-for-adaptive-agents)
+
+     →[Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
 
 * <a href="#foundational-approaches-in-reinforcement-learning-sort-by-time" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Foundational Approaches in Reinforcement Learning [sort by time] </a>
 
-	1. [Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
+	→[Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
 
-	2. [DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback](#dqn-tamer-human-in-the-loop-reinforcement-learning-with-intractable-feedback)
+	→[DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback](#dqn-tamer-human-in-the-loop-reinforcement-learning-with-intractable-feedback)
 
-	3. [Overcoming Exploration in Reinforcement Learning with Demonstrations](#overcoming-exploration-in-reinforcement-learning-with-demonstrations)
+	→[Overcoming Exploration in Reinforcement Learning with Demonstrations](#overcoming-exploration-in-reinforcement-learning-with-demonstrations)
 
-	4. [Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
+	→[Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
 
 * <a href="#open-source-rl-environment" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700">Open source RL environment </a>
-
-
 
 ***
 
