@@ -39,23 +39,24 @@
        3. [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](#rl-gpt-integrating-reinforcement-learning-and-code-as-policy)
    - **Coding**
      1. [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model](#long-horizon-locomotion-and-manipulation-on-a-quadrupedal-robot-with-large-language-model)
-   
+
    - **Data Preference**
      1. [Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization](#reinforcement-learning-from-llm-feedback-to-counteract-goal-misgeneralization)
    - **Data generation**
      1. [RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models](#rlingua-improving-reinforcement-learning-sample-efficiency-in-robotic-manipulations-with-large-language-models)
-   
+
    - **Environment Configuration**
      1. [Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation](#enhancing-autonomous-vehicle-training-with-language-model-integration-and-critical-scenario-generation)
      2. [EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents](#envgen-generating-and-adapting-environments-via-llms-for-training-embodied-agents)
-   
+
    - **Path Point**
+     
      1. [HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model](#HighwayLLM-Decision-Making-and-Navigation-in-Highway-Driving-with-RL-Informed-Language-Model)
-   
+     
    - **Prediction**
-   
-     ​	1. [Learning to Model the World with Language](#learning-to-model-the-world-with-language)
-   
+
+     1. [Learning to Model the World with Language](#learning-to-model-the-world-with-language)
+
    - **Reward Function**
      1. [Agentic Skill Discovery](#agentic-skill-discovery)
      2. [LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS](#league-empowering-continual-robot-learning-through-guided-skill-acquisition-with-large-language-models)
@@ -71,12 +72,12 @@
      12. [Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals](#read-and-reap-the-rewards-learning-to-play-atari-with-the-help-of-instruction-manuals)
    - **Skills Planning**
      1. [Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks](#skill-reinforcement-learning-and-planning-for-open-world-long-horizon-tasks)
-   
+
    - **State Representation**
      1. [LLM-Empowered State Representation for Reinforcement Learning](#LLM-Empowered-State-Representation-for-Reinforcement-Learning)
      2. [Natural Language Reinforcement Learning](#natural-language-reinforcement-learning)
      3. [State2Explanation: Concept-Based Explanations to Benefit Agent Learning and User Understanding](#state2explanation-concept-based-explanations-to-benefit-agent-learning-and-user-understanding)
-   
+
    - **Task Suggestion**
      1. [Hierarchical Continual Reinforcement Learning via Large Language Model](#hierarchical-continual-reinforcement-learning-via-large-language-model)
      2. [AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents](#autort-embodied-foundation-models-for-large-scale-orchestration-of-robotic-agents)
@@ -85,22 +86,21 @@
      5. [RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](#rladapter-bridging-large-language-models-to-reinforcement-learning-in-open-worlds)
      6. [ExpeL: LLM Agents Are Experiential Learners](#expel-llm-agents-are-experiential-learners)
      7. [Guiding Pretraining in Reinforcement Learning with Large Language Models](#guiding-pretraining-in-reinforcement-learning-with-large-language-models)
-   
+
    - **Transformers Framework**
      1. [Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning](#unleashing-the-power-of-pre-trained-language-models-for-offline-reinforcement-learning)
      2. [AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents](#amago-scalable-in-context-reinforcement-learning-for-adaptive-agents)
      3. [Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
 
 * <a href="#foundational-approaches-in-reinforcement-learning-sort-by-time" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Foundational Approaches in Reinforcement Learning [sort by time] </a>
-
-   1. [Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
-
-   2. [DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback](#dqn-tamer-human-in-the-loop-reinforcement-learning-with-intractable-feedback)
-
-   3. [Overcoming Exploration in Reinforcement Learning with Demonstrations](#overcoming-exploration-in-reinforcement-learning-with-demonstrations)
-
-   4. [Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
-
+	1. [Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
+	
+	2. [DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback](#dqn-tamer-human-in-the-loop-reinforcement-learning-with-intractable-feedback)
+	
+	3. [Overcoming Exploration in Reinforcement Learning with Demonstrations](#overcoming-exploration-in-reinforcement-learning-with-demonstrations)
+	
+	4. [Automatic Goal Generation for Reinforcement Learning Agents](#automatic-goal-generation-for-reinforcement-learning-agents)
+	
 * <a href="#open-source-rl-environment" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700">Open source RL environment </a>
 
 ***
