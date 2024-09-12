@@ -13,7 +13,7 @@
    + [Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods ](#survey-on-large-language-model-enhanced-reinforcement-learning-concept-taxonomy-and-methods)
    + [The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models](#the-rl-and-llm-taxonomy-tree-reviewing-synergies-between-reinforcement-learning-and-large-language-models)
 
-* <a href="#llm-rl-papers-sort-by-method" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700">LLM RL Papers [sort by method]</a>
+* <a href="#llm-rl-papers" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700">LLM RL Papers [sort by method]</a>
 
    - **Action**
 
@@ -143,7 +143,7 @@
 
      →[Transformers are Sample-Efficient World Models](#transformers-are-sample-efficient-world-models)
 
-* <a href="#foundational-approaches-in-reinforcement-learning-sort-by-time" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Foundational Approaches in Reinforcement Learning [sort by time] </a>
+* <a href="#foundational-approaches-in-reinforcement-learning" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Foundational Approaches in Reinforcement Learning</a>
 
 	→[Using Natural Language for Reward Shaping in Reinforcement Learning](#using-natural-language-for-reward-shaping-in-reinforcement-learning)
 
@@ -159,7 +159,7 @@
 
 ## Research Review
 
-### LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions
+##### LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions
 
 - Paper Link: [arXiv 2405.11106](https://arxiv.org/abs/2405.11106)
 - Overview: 
@@ -173,7 +173,7 @@ Potential research directions for language-conditioned Multi-Agent Reinforcement
 
 ***
 
-### A Survey on Large Language Model-Based Game Agents
+##### A Survey on Large Language Model-Based Game Agents
 
 - Paper Link: [arXiv 2404.02039](https://arxiv.org/abs/2404.02039), [Homepage](https://github.com/git-disl/awesome-LLM-game-agent-papers)
 - Overview:
@@ -190,7 +190,7 @@ The conceptual architecture of LLMGAs. At each game step, the **perception** mod
 
 ***
 
-### Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods 
+##### Survey on Large Language Model-Enhanced Reinforcement Learning: Concept, Taxonomy, and Methods 
 
 - Paper Link: [arXiv 2403.00282](https://arxiv.org/abs/2404.00282)
 - Overview: 
@@ -201,7 +201,7 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 
 ***
 
-###  The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models
+#####  The RL and LLM Taxonomy Tree Reviewing Synergies Between Reinforcement Learning and Large Language Models
 
 - Paper Link: [arXiv 2402.01874](https://arxiv.org/abs/2402.01874) 
 
@@ -217,22 +217,22 @@ Framework of LLM-enhanced RL in classical Agent-Environment interactions, where 
 
 ***
 
-## LLM RL Papers [sort by method]
+## LLM RL Papers
 
-### Language-Conditioned Offline RL for Multi-Robot Navigation
+##### Language-Conditioned Offline RL for Multi-Robot Navigation
 
 - Paper Link: [arXiv2407.20164](https://arxiv.org/abs/2407.20164), [Homepage](https://sites.google.com/view/llm-marl)
 - Overview:
 
-<img src="https://lh5.googleusercontent.com/Ef42PvkPdUvVIQmNmBAms5IEqXRFAx4TVwu384EVaAeTUiCBF98g5WIUviNdDiip5vAY_DuSyMuZe33Ej3iHj-zj4tLEkc-cur7A8_Mu1jgVScnizVy9AbdqVMzJKH9xqg=w1280" alt="img" style="zoom:50%;" />
+![](./images/arXiv2407_20164_2.png)
 
-<img src="https://lh5.googleusercontent.com/oyURqt-KBxqrUs_vmGrwd2TTs2a3JOYbUrCA5eV0DyeeefSPg0z7ByREatVP4bW2PM-4zV674b6KSkDuAd1IywTbLXBVGtu6Q0u5HSmlE2S9PwCsmpwSpeN1Os3u1WSI1w=w1280" alt="img" style="zoom:50%;" />
+![](./images/arXiv2407_20164.png)
 
 The proposed multi-robot model architecture. Each agent receives a different natural language task and a local observation. They summarize each natural language task g~i~  into a latent representation z~i~  , using an LLM. The function *f* is a graph neural network that encodes local observations o~1~, o~2~, . . . and task embeddings z~1~, z~2~, . . . into a task-dependent state representation s~i~|z for each agent *i*. They learn a local policy *π* conditioned on the state-task representation. Functions *π, f* are learned entirely from a fixed dataset using offline RL. Because they compute z~i~ only once per task, the LLM is not part of the perception-action loop, allowing the policy to act quickly.
 
 ***
 
-### LLM-Empowered State Representation for Reinforcement Learning
+##### LLM-Empowered State Representation for Reinforcement Learning
 
 - Paper Link: [arXiv2407.15019](https://arxiv.org/abs/2407.13237), [Homepage](https://github.com/thu-rllab/LESR)
 - Overview:
@@ -243,7 +243,7 @@ Conventional state representations in reinforcement learning often omit critical
 
 ***
 
-### iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement
+##### iLLM-TSC: Integration reinforcement learning and large language model for traffic signal control policy improvement
 
 - Paper Link: [arXiv2407.06025](https://arxiv.org/abs/2407.06025), [Homepage](https://github.com/Traffic-Alpha/iLLM-TSC)
 - Overview:
@@ -254,7 +254,7 @@ The authors introduce a framework called iLLM-TSC that combines LLM and an RL ag
 
 ***
 
-### Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control
+##### Large Language Model Guided Reinforcement Learning Based Six-Degree-of-Freedom Flight Control
 
 - Paper Link: [IEEE 2406 2024.3411015](https://ieeexplore.ieee.org/abstract/document/10551749)
 - Overview:
@@ -266,7 +266,7 @@ This paper proposes an LLM-guided deep reinforcement learning framework for IFC,
 
 ***
 
-### Agentic Skill Discovery
+##### Agentic Skill Discovery
 
 - Paper Link: [arXiv 2405.15019](https://arxiv.org/abs/2405.15019)，[Homepage](https://agentic-skill-discovery.github.io/)
 - Overview:
@@ -281,7 +281,7 @@ Contextual skill acquisition loop of ASD. Given the environment setup and the ro
 
 ***
 
-### HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model
+##### HighwayLLM: Decision-Making and Navigation in Highway Driving with RL-Informed Language Model
 
 - Paper Link: [arXiv 2405.13547](https://arxiv.org/abs/2405.13547)
 - Overview:
@@ -292,7 +292,7 @@ LLM-based vehicle trajectory planning structure: The RL agent observes the traff
 
 ***
 
-### LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS
+##### LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS
 
 - Paper Link:  https://openreview.net/forum?id=xXo4JL8FvV, [Homepage](https://sites.google.com/view/continuallearning)
 - Overview:
@@ -303,7 +303,7 @@ The authors present a framework that utilizes LLMs to guide continual learning. 
 
 ***
 
-### Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts
+##### Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts
 
 - Paper Link: [arXiv 2404.09248](https://arxiv.org/abs/2404.09248), 
 - Overview:
@@ -318,7 +318,7 @@ Overall procedure of KALM, consisting of three key modules:
 
 ***
 
-### Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation
+##### Enhancing Autonomous Vehicle Training with Language Model Integration and Critical Scenario Generation
 
 - Paper Link: [arXiv 2404.08570](https://arxiv.org/abs/2404.08570), 
 - Overview:
@@ -329,7 +329,7 @@ A architecture diagram mapping out the various components of CRITICAL. The frame
 
 ***
 
-### Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model
+##### Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Model
 
 - Paper Link: [arXiv 2404.05291](https://arxiv.org/abs/2404.05291)
 - Overview:
@@ -340,7 +340,7 @@ Overview of the hierarchical system for long-horizon loco-manipulation task. The
 
 ***
 
-### Yell At Your Robot: Improving On-the-Fly from Language Corrections
+##### Yell At Your Robot: Improving On-the-Fly from Language Corrections
 
 - Paper Link: [arXiv 2403.12910](https://arxiv.org/abs/2403.12910) , [Homepage](https://yay-robot.github.io/)
 
@@ -356,7 +356,7 @@ Overview of the hierarchical system for long-horizon loco-manipulation task. The
 
 ***
 
-### SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning 
+##### SRLM: Human-in-Loop Interactive Social Robot Navigation with Large Language Model and Deep Reinforcement Learning 
 
 - Paper Link: [arXiv 2403.15648](https://arxiv.org/abs/2403.15648)
 - Overview:
@@ -367,7 +367,7 @@ SRLM architecture: SRLM is implemented as a human-in-loop interactive social rob
 
 ***
 
-### EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents
+##### EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents
 
 - Paper Link: [arXiv 2403.12014](https://arxiv.org/abs/2403.12014) , [Homepage](https://envgen-llm.github.io/)
 
@@ -390,7 +390,7 @@ SRLM architecture: SRLM is implemented as a human-in-loop interactive social rob
 
 ***
 
-### LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS
+##### LEAGUE++: EMPOWERING CONTINUAL ROBOT LEARNING THROUGH GUIDED SKILL ACQUISITION WITH LARGE LANGUAGE MODELS
 
 - Paper Link: https://openreview.net/forum?id=xXo4JL8FvV, [Homepage](https://sites.google.com/view/continuallearning)
 - Overview:
@@ -401,7 +401,7 @@ This paper present a framework that utilizes LLMs to guide continual learning. I
 
 ***
 
-### RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models
+##### RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models
 
 - Paper Link: [arXiv 2403.06420](https://arxiv.org/abs/2403.06420), [homepage](https://rlingua.github.io/)
 
@@ -421,7 +421,7 @@ This paper present a framework that utilizes LLMs to guide continual learning. I
 
 ***
 
-### RL-GPT: Integrating Reinforcement Learning and Code-as-policy
+##### RL-GPT: Integrating Reinforcement Learning and Code-as-policy
 
 - Paper Link : [arXiv 2402.19299](https://arxiv.org/abs/2402.19299) ,  [homepage](https://sites.google.com/view/rl-gpt/)
 
@@ -437,7 +437,7 @@ This paper present a framework that utilizes LLMs to guide continual learning. I
 
 ***
 
-### How Can LLM Guide RL? A Value-Based Approach
+##### How Can LLM Guide RL? A Value-Based Approach
 
 - Paper Link: [arXiv 2402.16181](https://arxiv.org/abs/2402.16181) , [Homepage](https://github.com/agentification/Language-Integrated-VI)
 
@@ -453,7 +453,7 @@ This paper present a framework that utilizes LLMs to guide continual learning. I
 
 ***
 
-### PREDILECT: Preferences Delineated with Zero-Shot Language-based Reasoning in Reinforcement Learning
+##### PREDILECT: Preferences Delineated with Zero-Shot Language-based Reasoning in Reinforcement Learning
 
 - Paper Link: [arXiv 2402.15420](https://arxiv.org/abs/2402.15420), [Homepage](https://sites.google.com/view/rl-predilect)
 - Overview:
@@ -466,7 +466,7 @@ An overview of PREDILECT in a social navigation scenario: Initially, a human is 
 
 ***
 
-### Policy Improvement using Language Feedback Models
+##### Policy Improvement using Language Feedback Models
 
 - Paper Link : [arXiv 2402.07876](https://arxiv.org/abs/2402.07876) 
 
@@ -477,7 +477,7 @@ An overview of PREDILECT in a social navigation scenario: Initially, a human is 
 
 ***
 
-### Natural Language Reinforcement Learning
+##### Natural Language Reinforcement Learning
 
 - Paper Link: [arXiv 2402.07157](https://arxiv.org/abs/2402.07157) 
 
@@ -495,7 +495,7 @@ An overview of PREDILECT in a social navigation scenario: Initially, a human is 
 
 ***
 
-### Hierarchical Continual Reinforcement Learning via Large Language Model
+##### Hierarchical Continual Reinforcement Learning via Large Language Model
 
 - Paper Link: [arXiv 2401.15098](https://arxiv.org/abs/2401.15098)
 
@@ -511,7 +511,7 @@ An overview of PREDILECT in a social navigation scenario: Initially, a human is 
 
 ***
 
-### True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning
+##### True Knowledge Comes from Practice: Aligning LLMs with Embodied Environments via Reinforcement Learning
 
 - Paper Link: [arXiv 2401.14151](https://arxiv.org/abs/2401.14151) , [homepage](https://github.com/WeihaoTan/TWOSOME)
 
@@ -527,7 +527,7 @@ An overview of PREDILECT in a social navigation scenario: Initially, a human is 
 
 ***
 
-### AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
+##### AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
 
 - Paper Link: [arXiv 2401.12963](https://arxiv.org/abs/2401.12963) , [Homepage](https://auto-rt.github.io/)
 
@@ -545,7 +545,7 @@ An overview of PREDILECT in a social navigation scenario: Initially, a human is 
 
 ***
 
-### Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization
+##### Reinforcement Learning from LLM Feedback to Counteract Goal Misgeneralization
 
 - Paper Link: [arXiv 2401.07181](https://arxiv.org/abs/2401.07181), 
 
@@ -555,7 +555,7 @@ LLM preference modelling and reward model. The RL agent is deployed on the LLM g
 
 ***
 
-### Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft
+##### Auto MC-Reward: Automated Dense Reward Design with Large Language Models for Minecraft
 
 - Paper Link: [arXiv 2312.09238](https://arxiv.org/abs/2312.09238), [Homepage](https://yangxue0827.github.io/auto_mc-reward.html)
 - Overview: 
@@ -566,7 +566,7 @@ Overview of Auto MC-Reward. Auto MC-Reward consists of three key LLM-based compo
 
 ***
 
-### Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents
+##### Large Language Model as a Policy Teacher for Training Reinforcement Learning Agents
 
 - Paper Link: [arXiv 2311.13373](https://arxiv.org/abs/2311.13373), [Homepage](https://github.com/ZJLAB-AMMI/LLM4Teach)
 
@@ -578,7 +578,7 @@ Overview of Auto MC-Reward. Auto MC-Reward consists of three key LLM-based compo
 
 ***
 
-### Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework
+##### Language and Sketching: An LLM-driven Interactive Multimodal Multitask Robot Navigation Framework
 
 - Paper Link: [arXiv 2311.08244](https://arxiv.org/abs/2311.08244) 
 
@@ -591,7 +591,7 @@ The framework contains an LLM module, an Intelligent Sensing Module, and a Reinf
 
 ***
 
-### LLM Augmented Hierarchical Agents
+##### LLM Augmented Hierarchical Agents
 
 - Paper Link: [arXiv 2311.05596](https://arxiv.org/abs/2311.05596) 
 
@@ -603,7 +603,7 @@ The LLM to guides the high-level policy and accelerates learning. It is prompted
 
 ***
 
-### Accelerating Reinforcement Learning of Robotic Manipulations via Feedback from Large Language Models
+##### Accelerating Reinforcement Learning of Robotic Manipulations via Feedback from Large Language Models
 
 - Paper Link: [arXiv 2311.02379](https://arxiv.org/abs/2311.02379)
 - Overview:
@@ -614,7 +614,7 @@ Depiction of proposed Lafite-RL framework. Before learning a task, a user provid
 
 ***
 
-### Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning
+##### Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning
 
 - Paper Link: [arXiv 2310.20587](https://arxiv.org/abs/2310.20587), [Homepage](https://lamo2023.github.io/)
 - Overview:
@@ -625,7 +625,7 @@ The overview of LaMo. LaMo mainly consists of two stages: (1) pre-training LMs o
 
 ***
 
-### Large Language Models as Generalizable Policies for Embodied Tasks
+##### Large Language Models as Generalizable Policies for Embodied Tasks
 
 - Paper Link: [arXiv 2310.17722](https://arxiv.org/abs/2310.17722), [Homepage](https://llm-rl.github.io/)
 - Overview:
@@ -636,7 +636,7 @@ By utilizing Reinforcement Learning together with a pre-trained LLM and maximizi
 
 ***
 
-### Eureka: Human-Level Reward Design via Coding Large Language Models
+##### Eureka: Human-Level Reward Design via Coding Large Language Models
 
 - Paper Link: [arXiv 2310.12931](https://arxiv.org/abs/2310.12931) , [Homepage](https://eureka-research.github.io/)
 
@@ -658,7 +658,7 @@ EUREKA takes unmodified environment source code and language task description as
 
 ***
 
-### AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents
+##### AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents
 
 - Paper Link: [arXiv 2310.09971](https://arxiv.org/abs/2310.09971), [Homepage](https://ut-austin-rpl.github.io/amago/)
 - Overview:
@@ -669,7 +669,7 @@ In-context RL techniques solve memory and meta-learning problems by using sequen
 
 ***
 
-### LgTS: Dynamic Task Sampling using LLM-generated sub-goals for Reinforcement Learning Agents
+##### LgTS: Dynamic Task Sampling using LLM-generated sub-goals for Reinforcement Learning Agents
 
 - Paper Link: [arXiv 2310.09454](https://arxiv.org/pdf/2310.09454.pdf)
 - Overview: 
@@ -681,7 +681,7 @@ In-context RL techniques solve memory and meta-learning problems by using sequen
 
 ****
 
-### Octopus: Embodied Vision-Language Programmer from Environmental Feedback
+##### Octopus: Embodied Vision-Language Programmer from Environmental Feedback
 
 - Paper Link: [arXiv 2310.08588](https://arxiv.org/abs/2310.08588), [Homepage](https://choiszt.github.io/Octopus/)
 - Overview:
@@ -696,7 +696,7 @@ The provided image depicts a comprehensive pipeline for data collection and trai
 
 ***
 
-### Motif: Intrinsic Motivation from Artificial Intelligence Feedback
+##### Motif: Intrinsic Motivation from Artificial Intelligence Feedback
 
 - Paper Link: [arXiv 2310.00166](https://arxiv.org/abs/2310.00166), [Homepage](https://github.com/facebookresearch/motif)
 - Overview: 
@@ -707,7 +707,7 @@ A schematic representation of the three phases of Motif. In the first phase, dat
 
 ***
 
-### Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
+##### Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
 
 - Paper Link: [arXiv 2309.11489](https://arxiv.org/abs/2309.11489)
 
@@ -719,7 +719,7 @@ A schematic representation of the three phases of Motif. In the first phase, dat
 
 ***
 
-### State2Explanation: Concept-Based Explanations to Benefit Agent Learning and User Understanding
+##### State2Explanation: Concept-Based Explanations to Benefit Agent Learning and User Understanding
 
 - Paper Link: [arXiv 2309.12482](https://arxiv.org/abs/2309.12482)
 - Overview:
@@ -732,7 +732,7 @@ S2E framework involves (a) learning a joint embedding model M from which epsilon
 
 ***
 
-### Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics
+##### Self-Refined Large Language Model as Automated Reward Function Designer for Deep Reinforcement Learning in Robotics
 
 - Paper Link: [arXiv 2309.06687](https://arxiv.org/abs/2309.06687) 
 
@@ -744,7 +744,7 @@ S2E framework involves (a) learning a joint embedding model M from which epsilon
 
 ***
 
-### RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds
+##### RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds
 
 - Paper Link: [arXiv 2309.17176](https://arxiv.org/abs/2309.17176v1)
 
@@ -760,7 +760,7 @@ S2E framework involves (a) learning a joint embedding model M from which epsilon
 
 ***
 
-### ExpeL: LLM Agents Are Experiential Learners
+##### ExpeL: LLM Agents Are Experiential Learners
 
 - Paper Link: [arXiv 2308.10144](https://arxiv.org/abs/2308.10144), [Homepage](https://andrewzh112.github.io/#expel)
 - Overview: 
@@ -772,7 +772,7 @@ Right: (A) Illustrates the experience gathering process via Reflexion, enabling 
 
 ***
 
-### Language to Rewards for Robotic Skill Synthesis
+##### Language to Rewards for Robotic Skill Synthesis
 
 - Paper Link: [arXiv 2306.08647](https://arxiv.org/abs/2306.08647), [Homepage](https://language-to-reward.github.io/)
 - Overview:
@@ -783,7 +783,7 @@ Detailed dataflow of the Reward Translator. A Motion Descriptor LLM takes the us
 
 ***
 
-### Learning to Model the World with Language
+##### Learning to Model the World with Language
 
 - Paper Link: [arXiv2308.01399](https://arxiv.org/abs/2308.01399), [Homepage](https://dynalang.github.io/)
 - Overview: 
@@ -794,7 +794,7 @@ Dynalang learns to use language to make predictions about future (text + image) 
 
 ***
 
-### Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach
+##### Enabling Intelligent Interactions between an Agent and an LLM: A Reinforcement Learning Approach
 
 - Paper Link: [arXiv 2306.03604](https://arxiv.org/abs/2306.03604), [Homepage](https://github.com/ZJLAB-AMMI/LLM4RL)
 - Overview:
@@ -805,19 +805,7 @@ An overview of the Planner-Actor-Mediator paradigm and an example of the interac
 
 ***
 
-### SPRING: Studying the Paper and Reasoning to Play Games
-
-- Paper Link: [arXiv 2305.15486](https://arxiv.org/abs/2305.15486), [Homepage](https://github.com/Holmeswww/SPRING)
-
-- Framework Overview: 
-
-    ![](./images/SPRINGframework.png)
-
-    ​	Overview of SPRING. The context string, shown in the middle column, is obtained by parsing the LATEX source code of Hafner (2021). The LLM-based agent then takes input from a visual game descriptor and the context string. The agent uses questions composed into a DAG for chain-of-thought reasoning, and the last node of the DAG is parsed into action. 
-
-***
-
-### Reward Design with Language Models
+##### Reward Design with Language Models
 
 - Paper Link: [arXiv 2303.00001](https://arxiv.org/abs/2303.00001)
 
@@ -829,7 +817,7 @@ An overview of the Planner-Actor-Mediator paradigm and an example of the interac
 
 ***
 
-### Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks
+##### Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks
 
 - Paper Link: [arXiv 2303.16563](https://arxiv.org/abs/2303.16563) , [Homepage](https://sites.google.com/view/plan4mc)
 
@@ -850,7 +838,7 @@ An overview of the Planner-Actor-Mediator paradigm and an example of the interac
 
 ***
 
-### RE-MOVE: An Adaptive Policy Design for Robotic Navigation Tasks in Dynamic Environments via Language-Based Feedback
+##### RE-MOVE: An Adaptive Policy Design for Robotic Navigation Tasks in Dynamic Environments via Language-Based Feedback
 
 - Paper Link: [arXiv 2303.07622](https://arxiv.org/abs/2303.07622), [Homepage](https://gamma.umd.edu/researchdirections/crowdmultiagent/remove/)
 - Overview:
@@ -859,7 +847,7 @@ An overview of the Planner-Actor-Mediator paradigm and an example of the interac
 
 ***
 
-### Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation
+##### Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation
 
 - Paper Link: [arXiv 2302.09368](https://arxiv.org/abs/2302.09368)
 - Overview: 
@@ -875,7 +863,7 @@ The solid lines represent instruction following process, while the dashed lines 
 
 ***
 
-### Guiding Pretraining in Reinforcement Learning with Large Language Models
+##### Guiding Pretraining in Reinforcement Learning with Large Language Models
 
 - Paper Link: [arXiv 2302.06692](https://arxiv.org/abs/2302.06692) , [Homepage](https://github.com/yuqingd/ellm)
 
@@ -895,7 +883,7 @@ The solid lines represent instruction following process, while the dashed lines 
 
 ***
 
-### Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning
+##### Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning
 
 - Paper Link: [arXiv 2302.02662](https://arxiv.org/abs/2302.02662) , [Homepage](https://github.com/flowersteam/Grounding_LLMs_with_online_RL)
 
@@ -911,7 +899,7 @@ The solid lines represent instruction following process, while the dashed lines 
 
 ***
 
-### Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals
+##### Read and Reap the Rewards: Learning to Play Atari with the Help of Instruction Manuals
 
 - Paper Link: [arXiv 2302.04449](https://arxiv.org/pdf/2302.04449)
 - Overview:
@@ -924,7 +912,7 @@ An overview of  Read and Reward framework. The system receives the current frame
 
 ***
 
-### Collaborating with language models for embodied reasoning
+##### Collaborating with language models for embodied reasoning
 
 - Paper Link: [arXiv 2302.00763](https://arxiv.org/abs/2302.00763) 
 
@@ -940,13 +928,13 @@ An overview of  Read and Reward framework. The system receives the current frame
 
 ***
 
-### Transformers are Sample-Efficient World Models
+##### Transformers are Sample-Efficient World Models
 
 - Paper Link: [arXiv 2209.00588](https://arxiv.org/abs/2209.00588), [Homepage](https://github.com/eloialonso/iris)
 
 ***
 
-### Inner Monologue: Embodied Reasoning through Planning with Language Models
+##### Inner Monologue: Embodied Reasoning through Planning with Language Models
 
 - Paper Link: [arXiv 2207.05608](https://arxiv.org/abs/2207.05608), [Homepage](https://innermonologue.github.io/)
 - Overview: 
@@ -957,7 +945,7 @@ An overview of  Read and Reward framework. The system receives the current frame
 
 ***
 
-### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
+##### Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 
 - Paper Link: [arXiv 2204.01691](https://arxiv.org/abs/2204.01691) , [Homepage](https://say-can.github.io/)
 
@@ -973,7 +961,7 @@ An overview of  Read and Reward framework. The system receives the current frame
 
 ***
 
-### Keep CALM and Explore: Language Models for Action Generation in Text-based Games
+##### Keep CALM and Explore: Language Models for Action Generation in Text-based Games
 
 - Paper Link: [arXiv 2010.02903](https://arxiv.org/abs/2010.02903), [Homepage](https://github.com/princeton-nlp/calm-textgame)
 - Overview:
@@ -984,13 +972,13 @@ CALM combined with an RL agent – DRRN – for gameplay. CALM is trained on tra
 
 ***
 
-## Foundational Approaches in Reinforcement Learning [sort by time]
+## Foundational Approaches in Reinforcement Learning
 
 >Understanding the foundational approaches in Reinforcement Learning, such as Curriculum Learning, RLHF and HITL, is crucial for our research. These methods represent the building blocks upon which modern RL techniques are built. By studying these early methods, we can gain a deeper understanding of the principles and mechanisms that underlie RL. This knowledge can then inform and inspire current work on the intersection of Language Model Learning (LLM) and RL, helping us to develop more effective and innovative solutions.
 
 ***
 
-### Using Natural Language for Reward Shaping in Reinforcement Learning
+##### Using Natural Language for Reward Shaping in Reinforcement Learning
 
 - Paper Link: [arXiv 1903.02020](https://arxiv.org/abs/1903.02020) 
 
@@ -1006,7 +994,7 @@ CALM combined with an RL agent – DRRN – for gameplay. CALM is trained on tra
 
 ***
 
-### DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback
+##### DQN-TAMER: Human-in-the-Loop Reinforcement Learning with Intractable Feedback
 
 - Paper Link: [arXiv 1810.11748](https://arxiv.org/abs/1810.11748)
 - Overview: 
@@ -1017,7 +1005,7 @@ Overview of human-in-the-loop RL and the model (DQNTAMER). The agent asynchronou
 
 ***
 
-### Overcoming Exploration in Reinforcement Learning with Demonstrations
+##### Overcoming Exploration in Reinforcement Learning with Demonstrations
 
 - Paper Link: [arXiv 1709.10089](https://arxiv.org/abs/1709.10089), [Homepage](https://ashvin.me/demoddpg-website/)
 - Overview:
@@ -1026,7 +1014,7 @@ Exploration in environments with sparse rewards has been a persistent problem in
 
 ***
 
-### Automatic Goal Generation for Reinforcement Learning Agents
+##### Automatic Goal Generation for Reinforcement Learning Agents
 
 - Paper Link: [arXiv 1705.06366](https://arxiv.org/abs/1705.06366), [Homepage](https://sites.google.com/view/goalgeneration4rl)
 - Overview: 
