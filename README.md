@@ -7,12 +7,14 @@
 ***
 
 <table><tr>
-<td><img src="./images/SII.png" width="100" /></td>
-<td><img src="./images/westlake.png" width="80" /></td>
+<td><img src="./images/SII.png" width="200" /></td>
+<td><img src="./images/westlake.png" width="160" /></td>
 </tr></table>
 
 
 ***
+
+## Table of Content
 
 * <a href="#research-review" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Research Review</a>
 
