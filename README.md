@@ -6,11 +6,13 @@
 
 ***
 
-<table><tr>
+<table style="border-collapse: collapse; border: none;">
+<tr>
 <td><img src="./images/SII.png" width="200" /></td>
 <td><img src="./images/westlake.png" width="160" /></td>
 <td><img src="./images/windylab.png" width="200" /></td>
-</tr></table>
+</tr>
+</table>
 
 
 ***
