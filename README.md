@@ -6,11 +6,11 @@
 
 ***
 
-<table style="border-collapse: collapse; border: none;">
+<table style="border-collapse: collapse; border: none;" border="0" cellpadding="5" cellspacing="0">
 <tr>
-<td><img src="./images/SII.png" width="200" /></td>
-<td><img src="./images/westlake.png" width="160" /></td>
-<td><img src="./images/windylab.png" width="200" /></td>
+<td style="border: none; padding: 3;"><img src="./images/SII.png" width="200" /></td>
+<td style="border: none; padding: 3;"><img src="./images/westlake.png" width="160" /></td>
+<td style="border: none; padding: 3;"><img src="./images/windylab.png" width="200" /></td>
 </tr>
 </table>
 
