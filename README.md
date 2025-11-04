@@ -6,7 +6,7 @@
 
 ***
 
-<img src="./images/sii.png" style="zoom: 10%;" />  
+<img src="./images/SII.png" style="zoom: 10%;" />  
 
 <img src="./images/westlake.png" style="zoom: 8%;" />
 
