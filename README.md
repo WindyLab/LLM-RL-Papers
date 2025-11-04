@@ -6,6 +6,12 @@
 
 ***
 
+<img src="./images/sii.png" style="zoom: 10%;" />  
+
+<img src="./images/westlake.png" style="zoom: 8%;" />
+
+***
+
 * <a href="#research-review" style="color: black; text-decoration: none; font-size: 20px; bold: true; font-weight: 700"> Research Review</a>
 
    + [LLM-based Multi-Agent Reinforcement Learning: Current and Future Directions](#llm-based-multi-agent-reinforcement-learning-current-and-future-directions)
