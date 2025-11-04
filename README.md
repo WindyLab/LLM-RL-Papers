@@ -6,7 +6,10 @@
 
 ***
 
-<img src="./images/SII.png" style="zoom: 10%; display: inline-block;" /> <img src="./images/westlake.png" style="zoom: 8%; display: inline-block;" />
+<table><tr>
+<td><img src="./images/SII.png" width="100" /></td>
+<td><img src="./images/westlake.png" width="80" /></td>
+</tr></table>
 
 
 ***
