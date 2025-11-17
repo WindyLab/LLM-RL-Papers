@@ -4,16 +4,6 @@
 2. Focusing on combining their capabilities for **control** (such as game characters, robotics);
 3. Feel free to open PRs if you want to share the good papers you’ve read.
 
-***
-
-<table style="border-collapse: collapse; border: none;" border="0" cellpadding="5" cellspacing="0">
-<tr>
-<td style="border: none; padding: 3;"><img src="./images/SII.png" width="200" /></td>
-<td style="border: none; padding: 3;"><img src="./images/westlake.png" width="160" /></td>
-<td style="border: none; padding: 3;"><img src="./images/windylab.png" width="200" /></td>
-</tr>
-</table>
-
 
 ***
 
@@ -1096,3 +1086,14 @@ Reinforcement learning (RL) is a powerful technique to train an agent to perform
 - MAgent2: https://github.com/Farama-Foundation/MAgent2?tab=readme-ov-file
 
     <img src="./images/MAgent.gif" style="zoom: 67%;" />
+
+
+***
+
+<table style="border-collapse: collapse; border: none;" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td style="border: none; padding: 3;"><img src="./images/SII.png" width="200" /></td>
+<td style="border: none; padding: 3;"><img src="./images/westlake.png" width="160" /></td>
+<td style="border: none; padding: 3;"><img src="./images/windylab.png" width="200" /></td>
+</tr>
+</table>
